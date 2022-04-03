@@ -1,6 +1,5 @@
-header {
-  background-image: url(/images/home/home-header.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+.header-text h1,
+.header-text p,
+.button a {
+  color: #fff;
 }
