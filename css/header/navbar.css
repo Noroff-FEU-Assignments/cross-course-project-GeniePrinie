@@ -1,0 +1,49 @@
+.nav a,
+.nav label {
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.container-logo-rd {
+  padding: 10px 15px 10px 15px;
+}
+
+.container-nav {
+  align-self: center;
+  padding-top: 50px;
+}
+
+.container-nav a {
+  padding-right: 5%;
+}
+
+.desktop {
+  display: none;
+}
+
+.fa-bars {
+  cursor: pointer;
+}
+
+.container-hamburger-dropdown-list {
+  background-color: rgba(10, 54, 65, 1);
+  margin-top: 10px;
+  width: 100px;
+  text-align: center;
+  opacity: 0;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ .container-hamburger-dropdown-list {
+  opacity: 100%;
+}
