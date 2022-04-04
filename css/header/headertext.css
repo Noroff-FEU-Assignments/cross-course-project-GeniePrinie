@@ -2,4 +2,13 @@
 .header-text p,
 .button a {
   color: #fff;
+  margin-left: 5%;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+}
+.button {
+  text-align: center;
 }

@@ -1,8 +1,2 @@
 @media screen and (min-width: 600px) {
-  .desktop {
-    display: contents;
-  }
-  .container-hamburger-dropdown-list {
-    display: none;
-  }
 }
