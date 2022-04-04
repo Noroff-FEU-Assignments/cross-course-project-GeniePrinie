@@ -1,6 +1,7 @@
 /* footer navigation 
   MOVE TO 1000 !!!*/
 @media screen and (min-width: 1000px) {
+  /* footer */
   .footer-nav {
     text-align: left;
     display: flex;

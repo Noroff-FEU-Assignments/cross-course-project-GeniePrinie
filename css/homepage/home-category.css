@@ -1,0 +1,51 @@
+.category {
+  display: flex;
+  justify-content: space-evenly;
+}
+.category div {
+  margin-top: 30px;
+  height: 100%;
+  min-width: 150px;
+  min-height: 150px;
+  background-position: center center;
+  border-radius: 10px;
+  background-size: cover;
+}
+
+.category-links {
+  justify-content: space-evenly;
+}
+
+.category-links a {
+  color: #fff;
+  padding-top: 45%;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-shadow: 2px 2px 8px #000;
+}
+
+.women {
+  background-image: url(/images/home/home-women.jpg);
+  display: flex;
+}
+
+.men {
+  background-image: url(/images/home/home-men.jpg);
+  display: flex;
+}
+
+.kids {
+  background-image: url(/images/home/home-kids.jpg);
+  display: none;
+}
+
+.accessory {
+  background-image: url(/images/home/home-accessory.jpg);
+  display: none;
+}
+
+.gear {
+  background-image: url(/images/home/home-gear.jpg);
+  display: none;
+}

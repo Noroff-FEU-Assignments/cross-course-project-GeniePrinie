@@ -29,4 +29,9 @@
     cursor: default;
     pointer-events: none;
   }
+  /* category */
+  .accessory,
+  .gear {
+    display: flex;
+  }
 }
