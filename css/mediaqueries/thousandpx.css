@@ -1,0 +1,32 @@
+/* footer navigation 
+  MOVE TO 1000 !!!*/
+@media screen and (min-width: 1000px) {
+  .footer-nav {
+    text-align: left;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+  }
+  .footer-nav form {
+    margin: 15px 0;
+
+    min-width: 300px;
+  }
+  .container-footer-logo-links {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+  }
+  .footer-logo {
+    align-self: center;
+  }
+  .container-footer-links-section {
+    padding-left: 20px;
+  }
+  .container-footer-links {
+    margin-left: 20px;
+  }
+  .container-social i {
+    display: inline-flex;
+  }
+}

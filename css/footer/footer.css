@@ -1,3 +1,9 @@
+.footer-nav {
+  text-align: center;
+  padding: 10px 0 25px 0;
+  background-color: #05272f;
+}
+
 .footer-nav label {
   color: #fff;
 }
@@ -33,11 +39,6 @@
   border-radius: 50%;
 }
 
-.footer-nav {
-  text-align: center;
-  background-color: #05272f;
-  padding: 10px 0 25px 0;
-}
 .container-footer-links-section {
   display: flex;
   flex-direction: row;
