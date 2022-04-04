@@ -1,0 +1,36 @@
+.showcase {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-first-section-pic img,
+.home-second-section-pic img {
+  width: 100%;
+}
+
+.container-first-text {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 25px 0 30px 0;
+  text-align: center;
+}
+
+.container-second-text {
+  margin: 0px 0 30px 0;
+  text-align: center;
+}
+
+.shop-the-look a {
+  color: #fff;
+}
+
+.home-first-text h2,
+.home-second-text h2 {
+  font-size: 2.1em;
+}
+
+.home-first-text p,
+.home-second-text p {
+  padding-bottom: 10px;
+  font-size: 1.3em;
+}
