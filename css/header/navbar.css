@@ -12,16 +12,16 @@
 }
 
 .container-logo-rd {
-  padding: 10px 15px 10px 15px;
+  padding: 10px 10%;
 }
 
 .container-nav {
-  align-self: center;
   padding-top: 50px;
+  padding-right: 0%;
 }
 
 .container-nav a {
-  padding-right: 5%;
+  padding-right: 10px;
 }
 
 .desktop {
@@ -34,10 +34,15 @@
 
 .container-hamburger-dropdown-list {
   background-color: rgba(10, 54, 65, 1);
-  margin-top: 10px;
+  margin-top: 20px;
+  padding: 0 10px 10px 10px;
   width: 100px;
   text-align: center;
   opacity: 0;
+}
+.container-hamburger-dropdown-list div {
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid #fff;
 }
 
 input[type="checkbox"] {
