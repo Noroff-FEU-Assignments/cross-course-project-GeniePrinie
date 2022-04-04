@@ -34,4 +34,37 @@
   .gear {
     display: flex;
   }
+
+  /* main show case */
+  .home-first-section-pic img,
+  .home-second-section-pic img {
+    max-width: 1000px;
+    width: 100%;
+  }
+
+  .container-first-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .home-first-text,
+  .home-second-text {
+    align-self: center;
+
+    margin: 0 5%;
+  }
+
+  .container-second-text {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+
+    margin-bottom: 0;
+  }
+
+  .shop-the-look {
+    text-align: center;
+  }
 }
