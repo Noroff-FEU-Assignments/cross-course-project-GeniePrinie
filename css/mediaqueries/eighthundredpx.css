@@ -2,21 +2,27 @@
   .phone {
     display: none !important;
   }
+
   .desktop {
-    display: contents;
+    display: inline-block;
   }
+
   .button {
     text-align: left;
   }
-  .spacing-nav {
-    padding-right: 100px;
+
+  .container-nav {
+    margin-right: 20px;
   }
+
   .container-hamburger-dropdown-list {
     background-color: rgba(0, 0, 0, 0);
   }
+
   .container-hamburger-dropdown-list div {
     border-bottom: rgba(0, 0, 0, 0);
   }
+
   .container-hamburger-dropdown-list a {
     color: rgba(0, 0, 0, 0);
     cursor: default;
