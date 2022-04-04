@@ -5,7 +5,9 @@
   .desktop {
     display: contents;
   }
-
+  .button {
+    text-align: left;
+  }
   .spacing-nav {
     padding-right: 100px;
   }
