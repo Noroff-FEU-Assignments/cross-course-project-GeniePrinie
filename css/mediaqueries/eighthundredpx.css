@@ -1,0 +1,23 @@
+@media screen and (min-width: 800px) {
+  .phone {
+    display: none !important;
+  }
+  .desktop {
+    display: contents;
+  }
+
+  .spacing-nav {
+    padding-right: 100px;
+  }
+  .container-hamburger-dropdown-list {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .container-hamburger-dropdown-list div {
+    border-bottom: rgba(0, 0, 0, 0);
+  }
+  .container-hamburger-dropdown-list a {
+    color: rgba(0, 0, 0, 0);
+    cursor: default;
+    pointer-events: none;
+  }
+}
