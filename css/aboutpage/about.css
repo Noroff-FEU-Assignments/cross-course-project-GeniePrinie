@@ -1,3 +1,11 @@
+.about-background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 70vh;
+  position: relative;
+}
+
 .about-header {
   background-image: url(/images/about/about-boat.jpg);
 }
@@ -16,10 +24,42 @@
 
 .about-text {
   color: #fff;
-  border: 2px solid chartreuse;
 }
 
-/* .about-background {
-  width: 100%;
-  height: 100%;
-} */
+.about-text h1 {
+  font-size: 1.7em;
+  text-transform: uppercase;
+  margin: 25px 0 0px 0;
+}
+
+.about-text p {
+  font-size: 1.1em;
+  margin: 20px 5px 15px 0;
+}
+
+.about-positioning-text-one {
+  position: absolute;
+  top: -65px;
+  margin-left: 10px;
+  min-width: 350px;
+  height: 300px;
+}
+
+.about-positioning-text-two {
+  color: #000;
+  text-align: right;
+  position: absolute;
+  top: -65px;
+  right: 0;
+  margin-right: 10px;
+  min-width: 350px;
+  height: 300px;
+}
+
+.about-positioning-text-three {
+  position: absolute;
+  top: -65px;
+  margin-left: 10px;
+  min-width: 350px;
+  height: 300px;
+}
