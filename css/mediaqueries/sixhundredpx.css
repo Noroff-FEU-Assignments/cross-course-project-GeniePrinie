@@ -3,4 +3,28 @@
   .kids {
     display: flex;
   }
+
+  /* women page */
+  .container-kinds {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .container-kinds div {
+    padding: 20px;
+    border: none;
+  }
+
+  .container-kinds .top {
+    padding: 20px;
+  }
+
+  .container-kinds .accessory {
+    padding: 20px;
+  }
+
+  .container-kinds .backpack {
+    padding: 20px;
+  }
 }
