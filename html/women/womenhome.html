@@ -93,53 +93,138 @@
         <h1>Recommendations</h1>
 
         <!-- first rec -->
-        <div class="container-recomendations">
-          <div>
-            <img
-              src="/images/women/classic-weather-jacket.jpg"
-              alt="a girl wearing Rainydays Classic Weather Jacket in white color"
-            />
-            <h2>Classic Weather Jacket</h2>
-            <p>$90.00 USD</p>
-            <div class="circle black"></div>
-            <div class="circle white"></div>
+        <div class="container-recomendations-wrapper">
+          <div class="container-recomendations-block-row">
+            <div class="container-recomendations-block-column">
+              <div class="container-recomendations-block">
+                <a href="#">
+                  <img
+                    src="/images/women/classic-weather-jacket.jpg"
+                    alt="a girl wearing Rainydays Classic Weather Jacket in white color" />
+                  <h2>Classic Weather Jacket</h2>
+                  <p>$90.00 USD</p>
+                  <div class="circle circle-black"></div>
+                  <div class="circle circle-white"></div
+                ></a>
+              </div>
+            </div>
+            <!-- second rec -->
+            <div class="container-recomendations-block-column">
+              <div class="container-recomendations-block">
+                <a href="#">
+                  <img
+                    src="/images/women/classic-rain-jacket.jpg"
+                    alt="a girl wearing Rainydays Classic Rain Jacket in red color" />
+                  <h2>Classic Rain Jacket</h2>
+                  <p>$90.00 USD</p>
+                  <div class="circle circle-red"></div
+                ></a>
+              </div>
+            </div>
           </div>
 
-          <!-- second rec -->
-          <div>
-            <img
-              src="/images/women/classic-rain-jacket.jpg"
-              alt="a girl wearing Rainydays Classic Rain Jacket in red color"
-            />
-            <h2>Classic Rain Jacket</h2>
-            <p>$90.00 USD</p>
-            <div class="circle red"></div>
-          </div>
+          <div class="container-recomendations-block-row">
+            <!-- third rec -->
+            <div class="container-recomendations-block-column">
+              <div class="container-recomendations-block">
+                <a href="#">
+                  <img
+                    src="/images/women/classic-down-jacket.jpg"
+                    alt="a girl wearing Rainydays Classic Down Jacket in mustardy yellow color"
+                  />
+                  <h2>Classic Down Jacket</h2>
+                  <p>$90.00 USD</p>
+                  <div class="circle circle-yellow"></div>
+                </a>
+              </div>
+            </div>
 
-          <!-- third rec -->
-          <div>
-            <img
-              src="/images/women/classic-down-jacket.jpg"
-              alt="a girl wearing Rainydays Classic Down Jacket in mustardy yellow color"
-            />
-            <h2>Classic Down Jacket</h2>
-            <p>$90.00 USD</p>
-            <div class="circle yellow"></div>
-          </div>
-
-          <!-- forth rec -->
-          <div>
-            <img
-              src="/images/specific-jacket/sarah-stand.JPG"
-              alt="a girl wearing Rainydays Classic Weather Pull-over in offwhite color"
-            />
-            <h2>Classic Weather Pull-over</h2>
-            <p>$90.00 USD</p>
-            <div class="circle white"></div>
+            <!-- forth rec -->
+            <div class="container-recomendations-block-column">
+              <div class="container-recomendations-block">
+                <a href="#">
+                  <img
+                    src="/images/specific-jacket/sarah-stand.JPG"
+                    alt="a girl wearing Rainydays Classic Weather Pull-over in offwhite color"
+                  />
+                  <h2>Classic Weather Pull-over</h2>
+                  <p>$90.00 USD</p>
+                  <div class="circle circle-white"></div>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
     <!-- footer under here -->
+    <footer>
+      <!-- nav footer -->
+      <!-- form -->
+      <section class="footer-nav">
+        <div>
+          <!-- form -->
+          <form method="post">
+            <div><label for="email">Subscribe to our newsletter</label></div>
+            <div>
+              <input
+                type="email"
+                name="Email"
+                id="email"
+                placeholder="Enter your e-mail"
+              />
+              <a class="footer-right-arrow" href="#"
+                ><i class="fa-solid fa-angle-right"></i
+              ></a>
+            </div>
+          </form>
+          <!-- socials -->
+          <div class="container-social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="container-footer-logo-links">
+          <!-- logo -->
+          <section class="footer-logo">
+            <a href="index.html"
+              ><img src="/images/footer-logo.png" alt=""
+            /></a>
+          </section>
+          <!-- nav links -->
+          <section class="container-footer-links-section">
+            <div class="container-footer-links">
+              <h3>Shop</h3>
+              <a href="/html/women/womens.html">Women</a>
+              <a href="#">Men</a>
+              <a href="#">Kid</a>
+              <a href="#">Accessories</a>
+              <a href="#">Gear</a>
+            </div>
+            <div class="container-footer-links">
+              <h3>Rainydays</h3>
+              <a href="/html/about/about.html">About Us</a>
+              <a href="/html/contact/contact.html">Contact</a>
+              <a href="#">Account</a>
+              <a href="#">Reviews</a>
+              <a href="#">Locations</a>
+            </div>
+            <div class="container-footer-links">
+              <h3>Support</h3>
+              <a href="#">Customer care</a>
+              <a href="#">Shipping</a>
+              <a href="#">Returns</a>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- copyright -->
+      <section class="copyright">
+        <p>Copyright &copy;</p>
+      </section>
+    </footer>
   </body>
 </html>

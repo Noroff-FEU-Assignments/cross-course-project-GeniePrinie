@@ -18,7 +18,7 @@ header {
 
 .filter-button {
   position: absolute;
-  left: 40%;
+  left: 45%;
   bottom: 30px;
 }
 
@@ -57,7 +57,7 @@ header {
 }
 
 .recommendations {
-  padding: 20px;
+  padding: 20px 5% 20px 10%;
 }
 
 .recommendations h1 {
@@ -65,11 +65,70 @@ header {
   font-weight: lighter;
 }
 
-.container-recomendations img {
+.recommendations h2 {
+  font-size: 20px;
+  min-height: 50px;
+  margin-bottom: 0;
+  font-weight: bolder;
+}
+
+.recommendations p {
+  font-size: 16px;
+  font-weight: bolder;
+  margin-top: 0;
+}
+
+.container-recomendations-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* fix width to 100% when Oskar resize the photos */
+.container-recomendations-wrapper img {
+  height: 250px;
+}
+
+.container-recomendations-block-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
 }
 
-.container-recomendations {
+.container-recomendations-block-column {
   display: flex;
   flex-direction: column;
+  flex: 1;
+}
+
+.container-recomendations-block {
+  min-width: 180px;
+  min-height: 390px;
+}
+
+.circle {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  border: 1px solid black;
+  height: 5px;
+  width: 5px;
+
+  display: inline-block;
+}
+
+.circle-black {
+  background-color: #000;
+}
+
+.circle-red {
+  background-color: rgb(182, 17, 17);
+}
+
+.circle-white {
+  background-color: #fff;
+}
+
+.circle-yellow {
+  background-color: rgb(244, 209, 12);
 }
