@@ -1,0 +1,41 @@
+.circle-size {
+  padding: 18px;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.circle-size p {
+  margin: 0;
+  text-align: center;
+  padding: 0;
+  position: absolute;
+  bottom: 9px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 10px;
+}
+
+.circle-size-xs p {
+  right: 8px;
+}
+
+.circle-size-s p {
+  right: 15px;
+}
+
+.circle-size-m p {
+  right: 12px;
+}
+
+.circle-size-l p {
+  right: 15px;
+}
+
+.circle-size-xl p {
+  right: 7px;
+}
+
+.circle-size-xxl p {
+  right: 1px;
+}

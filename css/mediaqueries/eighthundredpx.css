@@ -93,4 +93,19 @@
   .contact-button {
     justify-content: center;
   }
+
+  /* specific product */
+  .container-showcase-flex-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .container-showcase-pictures {
+    width: 600px;
+  }
+
+  .container-showcase-text {
+    margin-left: 20px;
+  }
 }
