@@ -28,35 +28,139 @@
 
   <body>
     <!-- header here -->
-    <header></header>
+    <header>
+      <section class="free-shipping">
+        <p>Free Shipping over $150 USD Worldwide</p>
+      </section>
+
+      <!-- nav bar -->
+      <nav>
+        <!-- logo (phone and desktop) -->
+        <div class="nav">
+          <span class="container-logo-rd">
+            <a href="index.html">
+              <img src="/images/RD-logo.png" alt="Rainydays logo" />
+            </a>
+          </span>
+          <!-- nav header -->
+          <span class="container-nav">
+            <a href="#" class="desktop">Shop</a>
+            <a href="#" class="desktop">Activities</a>
+            <a href="/html/about/about.html" class="desktop">About</a>
+            <a href="#" class="desktop">Account</a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <label for="hamburger-menu"
+              ><i class="fa-solid fa-bars phone"></i
+            ></label>
+            <input type="checkbox" id="hamburger-menu" />
+            <div class="container-hamburger-dropdown-list">
+              <div><a href="#">Shop</a></div>
+              <div><a href="#">Activities</a></div>
+              <div><a href="/html/about/about.html">About</a></div>
+              <div><a href="#">Account</a></div>
+              <div><a href="#">Support</a></div>
+            </div>
+          </span>
+        </div>
+      </nav>
+    </header>
 
     <!-- main -->
-    <main>
+    <main class="main-shopping-cart">
       <!-- h1 tag your shopping cart -->
-      <h1></h1>
+      <h1>Your Shopping Cart</h1>
 
       <!-- BLOCK 1 item until price -->
+      <section class="container-item-block">
+        <!-- need to flex row container-item-block -->
+        <div class="container-item">
+          <div>
+            <img
+              src="/images/specific-jacket/sarah-stand.jpg"
+              alt="A girl wearing white Rainydays Classic Weather Pull-over"
+            />
+          </div>
 
-      <section>
-        <!-- this section class needs to be position relative -->
-        <!-- put img, name, color, size here -->
+          <div>
+            <h2>Classic weather pull - over</h2>
+            <div class="color-n-size">
+              <p>Color:</p>
+              <p>White</p>
+              <div class="circle circle-white"></div>
+            </div>
+            <div class="color-n-size">
+              <p>Size:</p>
+              <p>Extra Small</p>
+            </div>
+          </div>
+        </div>
 
-        <!-- div of "EDIT" button, item addition, trash, price need absolute -->
         <!-- PUT edit, item addition, trash icon, price here -->
+        <div>
+          <div class="container-edit"><p>Edit</p></div>
+
+          <div class="container-number">
+            <div class="container-number-n-trash">
+              <div>
+                <!-- flex class item-add-subtract-button-->
+                <div class="item-add-subtract-button">
+                  <div><i class="fa-solid fa-circle-minus"></i></div>
+                  <div><p>1</p></div>
+                  <div><i class="fa-solid fa-circle-plus"></i></div>
+                </div>
+              </div>
+
+              <div class="icon-trash">
+                <i class="fa-solid fa-trash-can"></i>
+              </div>
+            </div>
+
+            <div><p>$90.00 USD</p></div>
+          </div>
+        </div>
       </section>
 
       <!-- BLOCK 2  continue shopping button, summary, until checkout button-->
-      <section>
+      <section class="container-summary-block">
         <!-- THIS SECTION NEEDS TO FLEX row at 800px -->
 
         <!-- div 1 container-->
-        <div>
+        <div class="container-button-hint">
           <!-- <continue shopping button, HINT with truck icon -->
+          <div class="button button-design button-continue-shopping">
+            <a href="/html/women/jacketlist.html"
+              ><i class="fa-solid fa-angle-left"></i> Continue Shopping</a
+            >
+          </div>
+
+          <div class="hint-box">
+            <div><i class="fa-solid fa-truck"></i></div>
+            <div><p>Hint:</p></div>
+            <div><p>You are $60.00 away from receiving free shipping!</p></div>
+          </div>
         </div>
 
         <!-- div 2 container-->
-        <div>
+        <div class="container-summary-price">
           <!-- SUMMARY, SUBTOTAL, Checkout button -->
+          <div><h2>Summary</h2></div>
+
+          <div class="subtotal-price-flex">
+            <div><h3>Subtotal</h3></div>
+            <div><p>$90.00 USD</p></div>
+          </div>
+          <div class="calculated-at-check-out">
+            <p>
+              Shipping, taxes, and discount codes are calculated at checkout.
+            </p>
+          </div>
+
+          <div class="button button-design button-checkout">
+            <a href="/html/women/jacketlist.html"
+              >Check Out <i class="fa-solid fa-angle-right"></i
+            ></a>
+          </div>
         </div>
       </section>
 
@@ -64,5 +168,73 @@
     </main>
 
     <!-- footer under here -->
+    <footer>
+      <!-- nav footer -->
+      <!-- form -->
+      <section class="footer-nav">
+        <div>
+          <!-- form -->
+          <form method="post">
+            <div><label for="email">Subscribe to our newsletter</label></div>
+            <div>
+              <input
+                type="email"
+                name="Email"
+                id="email"
+                placeholder="Enter your e-mail"
+              />
+              <a class="footer-right-arrow" href="#"
+                ><i class="fa-solid fa-angle-right"></i
+              ></a>
+            </div>
+          </form>
+          <!-- socials -->
+          <div class="container-social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="container-footer-logo-links">
+          <!-- logo -->
+          <section class="footer-logo">
+            <a href="index.html"
+              ><img src="/images/footer-logo.png" alt=""
+            /></a>
+          </section>
+          <!-- nav links -->
+          <section class="container-footer-links-section">
+            <div class="container-footer-links">
+              <h3>Shop</h3>
+              <a href="/html/women/womens.html">Women</a>
+              <a href="#">Men</a>
+              <a href="#">Kid</a>
+              <a href="#">Accessories</a>
+              <a href="#">Gear</a>
+            </div>
+            <div class="container-footer-links">
+              <h3>Rainydays</h3>
+              <a href="/html/about/about.html">About Us</a>
+              <a href="/html/contact/contact.html">Contact</a>
+              <a href="#">Account</a>
+              <a href="#">Reviews</a>
+              <a href="#">Locations</a>
+            </div>
+            <div class="container-footer-links">
+              <h3>Support</h3>
+              <a href="#">Customer care</a>
+              <a href="#">Shipping</a>
+              <a href="#">Returns</a>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- copyright -->
+      <section class="copyright">
+        <p>Copyright &copy;</p>
+      </section>
+    </footer>
   </body>
 </html>
