@@ -76,8 +76,13 @@ main h1 {
   margin-right: 10px;
 }
 
+.item-add-subtract-button i {
+  cursor: pointer;
+}
+
 .icon-trash {
   margin-right: 10px;
+  cursor: pointer;
 }
 
 /* BLOCK 2 */
