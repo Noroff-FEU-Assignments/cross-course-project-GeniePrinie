@@ -183,3 +183,8 @@ main h1 {
   padding: 8px;
   cursor: pointer;
 }
+
+.add-to-cart-icon:hover {
+  background-color: rgb(101, 101, 101);
+  color: #fff;
+}
