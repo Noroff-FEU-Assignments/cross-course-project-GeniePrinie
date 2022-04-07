@@ -170,3 +170,16 @@ main h1 {
   display: flex;
   justify-content: flex-end;
 }
+
+.add-to-cart-image {
+  position: relative;
+}
+
+.add-to-cart-icon {
+  position: absolute;
+  bottom: 4px;
+  right: 0px;
+  background-color: #fff;
+  padding: 8px;
+  cursor: pointer;
+}
