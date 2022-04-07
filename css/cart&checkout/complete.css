@@ -1,0 +1,34 @@
+main {
+  margin: 10px 10%;
+}
+
+.section-text h1 {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 2em;
+}
+
+.container-order-track {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container-order-track-small {
+  display: flex;
+  justify-content: space-around;
+  width: 250px;
+}
+
+.container-order-track-small div:nth-child(1) {
+  margin-right: 10px;
+}
+
+.container-order-track-small div:nth-child(2) {
+  color: #177c95;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.container-order-track-small p {
+  font-size: 14px;
+}

@@ -27,4 +27,17 @@
   .container-kinds .backpack {
     padding: 20px;
   }
+
+  /* complete page */
+  .container-order-track-small p {
+    font-size: 1em;
+  }
+
+  .container-name h2 {
+    font-size: 1.5em;
+  }
+
+  .container-name p {
+    font-size: 1em;
+  }
 }

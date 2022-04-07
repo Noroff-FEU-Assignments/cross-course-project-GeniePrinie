@@ -137,4 +137,9 @@
   .button-checkout {
     justify-content: center;
   }
+
+  /* complete page */
+  .container-order-track-small p {
+    font-size: 1.3em;
+  }
 }
