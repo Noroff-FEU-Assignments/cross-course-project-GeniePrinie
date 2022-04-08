@@ -40,4 +40,13 @@
   .container-name p {
     font-size: 1em;
   }
+
+  /* information page */
+
+  .container-form-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 0px;
+  }
 }

@@ -1,5 +1,21 @@
+.circle-checked {
+  padding: 10px;
+  border: 2px solid #0a3641;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
 .current {
   color: #0a3641;
+}
+
+.noncurrent {
+  color: #adacac;
+}
+
+.noncurrent-circle {
+  border: 2px solid #adacac;
 }
 
 .container-circle-checked-section {
@@ -25,12 +41,4 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.circle-checked {
-  padding: 10px;
-  border: 2px solid #0a3641;
-  border-radius: 50%;
-  width: 15px;
-  height: 15px;
 }

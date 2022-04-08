@@ -30,4 +30,27 @@
   .container-social i {
     display: inline-flex;
   }
+  /* checkout success pages */
+
+  .container-block-flex-row {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  .container-block-item {
+    background-color: #fafafa;
+    padding: 20px;
+    border: 1px solid #d6d5d5;
+    margin-left: 30px;
+  }
+
+  .container-block-form {
+    width: 430px;
+  }
+
+  .container-form-inputs {
+    display: flex;
+    flex-direction: column;
+  }
 }

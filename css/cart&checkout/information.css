@@ -1,0 +1,50 @@
+main {
+  margin: auto 5%;
+}
+.container-quick-ckeckout {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-paypal {
+  border-radius: 5px;
+  background-color: #fcba31;
+  text-align: center;
+}
+
+.div-paypal svg {
+  height: 25px;
+  padding: 5px;
+}
+
+.or {
+  text-align: center;
+}
+.container-form-section h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container-text {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+.container-text h1 {
+  font-size: 20px;
+}
+
+.container-text p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container-text-small {
+  display: flex;
+}
+
+.container-text-small p:nth-child(2) {
+  text-decoration: underline;
+  cursor: pointer;
+  padding-left: 5px;
+}
