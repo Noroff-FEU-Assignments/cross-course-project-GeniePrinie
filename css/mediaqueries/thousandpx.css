@@ -53,4 +53,10 @@
     display: flex;
     flex-direction: column;
   }
+
+  /* summary block */
+  .container-block-summary {
+    margin-top: 0px;
+    width: 430px;
+  }
 }
