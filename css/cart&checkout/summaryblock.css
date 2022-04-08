@@ -4,9 +4,6 @@ main {
 }
 .container-block-summary {
   margin-top: 20px;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
 }
 
 .container-summary-line {
@@ -28,6 +25,10 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.summary-line p {
+  margin-right: 5px;
 }
 
 .summary-line p:nth-child(1) {
