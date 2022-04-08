@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Customer completion page for outdoor wear website Rainydays. Outdoor-clothing store for women, men, kids, accessory and gear. We are focusing manily on jackets. Rainydays jackets are durable, weatherproof, rainproof, light, compact, and stylish."
+      content="Customer Payment page for outdoor wear website Rainydays. Outdoor-clothing store for women, men, kids, accessory and gear. We are focusing manily on jackets. Rainydays jackets are durable, weatherproof, rainproof, light, compact, and stylish."
     />
-    <title>Redo Complete page</title>
+    <title>Redo Payment Page</title>
     <script
       src="https://kit.fontawesome.com/2a0a00e374.js"
       crossorigin="anonymous"
@@ -18,16 +18,18 @@
     <link rel="stylesheet" href="/css/header/navbar.css" />
     <link rel="stylesheet" href="/css/cart&checkout/circlechecked.css" />
     <link rel="stylesheet" href="/css/cart&checkout/itemandprice.css" />
+    <link rel="stylesheet" href="/css/cart&checkout/floatlabel.css" />
     <link
       rel="stylesheet"
       href="/css/cart&checkout/button-return-continue.css"
     />
     <link rel="stylesheet" href="/css/cart&checkout/summaryblock.css" />
+    <link rel="stylesheet" href="/css/cart&checkout/radioblock.css" />
+    <link rel="stylesheet" href="/css/cart&checkout/classcontainertext.css" />
     <link rel="stylesheet" href="/css/mediaqueries/sixhundredpx.css" />
     <link rel="stylesheet" href="/css/mediaqueries/eighthundredpx.css" />
     <link rel="stylesheet" href="/css/mediaqueries/thousandpx.css" />
   </head>
-
   <body>
     <!-- header here -->
     <header>
@@ -39,6 +41,8 @@
         </span>
       </nav>
     </header>
+
+    <!-- main -->
     <main>
       <!-- circle checked -->
       <section class="container-circle-checked-section">
@@ -68,16 +72,16 @@
 
           <div class="container-circle-checked current">
             <div class="circle-checked">
-              <i class="fa-solid fa-check"></i>
+              <i class="fa-solid fa-4"></i>
             </div>
             <div><p>Payment</p></div>
           </div>
 
           <div class="dash"></div>
 
-          <div class="container-circle-checked current">
-            <div class="circle-checked">
-              <i class="fa-solid fa-5"></i>
+          <div class="container-circle-checked noncurrent">
+            <div class="circle-checked noncurrent-circle">
+              <i class="fa-solid fa-check"></i>
             </div>
             <div><p>Complete</p></div>
           </div>
@@ -146,7 +150,7 @@
                 <p>$15.90 USD</p>
               </div>
               <div class="calculate-text">
-                <p></p>
+                <p>Taxes are calculated at the next step.</p>
               </div>
               <!-- total -->
               <div class="container-money">
@@ -157,9 +161,8 @@
           </section>
         </div>
 
-        <!-- BlOCK 2 -->
+        <!-- BLOCK 2 -->
         <div class="container-block-summary">
-          <!-- summary block flex column give border-->
           <section class="container-summary-line">
             <!-- contact -->
             <div class="summary-line">
@@ -180,32 +183,21 @@
               <p>Standard Shipping (4-6 Working Days) • $5.90</p>
               <p>Edit</p>
             </div>
-
-            <!-- Payment -->
-            <div class="summary-line">
-              <p>Payment</p>
-              <p>Credit card • ending-0987</p>
-              <p>Edit</p>
-            </div>
-
-            <!-- Billing Address -->
-            <div class="summary-line">
-              <p>Billing Address</p>
-              <p>Rainbow Dr 77, 0123, Oslo, Norway</p>
-              <p>Edit</p>
-            </div>
           </section>
+
+          <!-- RADIO BLOCK -->
+
           <!-- button return and continue -->
           <section class="container-button-return-continue">
             <div>
               <a href="/html/cart&checkout/shoppingcart.html"
-                ><i class="fa-solid fa-angle-left"></i> Return to Payment</a
+                ><i class="fa-solid fa-angle-left"></i> Return to Shipping</a
               >
             </div>
 
             <div class="button button-design button-return-continue">
               <a href="/index.html"
-                >Complete order <i class="fa-solid fa-angle-right"></i
+                >Pay now <i class="fa-solid fa-angle-right"></i
               ></a>
             </div>
           </section>
