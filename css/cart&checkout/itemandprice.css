@@ -1,8 +1,8 @@
+/* item pic, color,size,quantity, price */
 .container-item {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border: 1px solid springgreen;
 }
 
 .container-item img {
@@ -36,4 +36,32 @@
 
 .container-size-n-price div:nth-child(2) {
   font-weight: bolder;
+}
+
+/* subtotal, shipping, taxes, total */
+.container-money-section {
+  display: flex;
+  justify-content: center;
+  margin: 25px auto;
+}
+.container-money-block {
+  width: 410px;
+}
+
+.container-money-block div:nth-child(1) {
+  border-top: 1px solid #d6d5d5;
+}
+
+.container-money-block div:nth-child(4) {
+  border-top: 1px solid #d6d5d5;
+  font-weight: bolder;
+}
+
+.container-money-block div:nth-child(2) p {
+  margin: 0;
+}
+
+.container-money {
+  display: flex;
+  justify-content: space-between;
 }
