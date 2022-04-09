@@ -1,5 +1,6 @@
 main {
   margin: 10px 10% 30px 10%;
+  min-height: 75vh;
 }
 
 .section-text h1 {
