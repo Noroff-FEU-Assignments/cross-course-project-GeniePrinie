@@ -88,9 +88,15 @@
 }
 
 .container-coupon input {
-  padding: 5px 20px;
+  padding: 5px 25px;
   border-radius: 5px;
   border: 1px solid #888888;
+}
+
+.container-coupon input::placeholder {
+  color: #9f9f9f;
+  width: 155px;
+  text-align: left;
 }
 
 .apply {

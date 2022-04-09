@@ -1,0 +1,10 @@
+.container-form-block {
+  background-color: #fafafa;
+  padding-left: 10px;
+  padding-right: 20px;
+  border-top: 1px solid #d6d5d5;
+}
+
+.container-text {
+  flex-direction: column;
+}
