@@ -8,7 +8,7 @@
       name="description"
       content="Customer Payment page for outdoor wear website Rainydays. Outdoor-clothing store for women, men, kids, accessory and gear. We are focusing manily on jackets. Rainydays jackets are durable, weatherproof, rainproof, light, compact, and stylish."
     />
-    <title>Redo Payment Page</title>
+    <title>Rainydays | Check-out Payment</title>
     <script
       src="https://kit.fontawesome.com/2a0a00e374.js"
       crossorigin="anonymous"
@@ -38,7 +38,7 @@
     <header>
       <nav>
         <span class="container-logo-rd">
-          <a href="index.html">
+          <a href="/index.html">
             <img src="/images/RD-logo.png" alt="Rainydays logo" />
           </a>
         </span>
@@ -51,24 +51,36 @@
       <section class="container-circle-checked-section">
         <div class="container-circle-checked-block">
           <div class="container-circle-checked current">
-            <div class="circle-checked"><i class="fa-solid fa-check"></i></div>
-            <div><p>Cart</p></div>
-          </div>
-
-          <div class="dash"></div>
-
-          <div class="container-circle-checked current">
-            <div class="circle-checked"><i class="fa-solid fa-check"></i></div>
-            <div><p>Information</p></div>
+            <a href="/html/cart&checkout/shoppingcart.html">
+              <div class="circle-checked">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div><p>Cart</p></div></a
+            >
           </div>
 
           <div class="dash"></div>
 
           <div class="container-circle-checked current">
             <div class="circle-checked">
-              <i class="fa-solid fa-check"></i>
+              <a href="/html/cart&checkout/information.html"
+                ><i class="fa-solid fa-check"></i
+              ></a>
             </div>
-            <div><p>Shipping</p></div>
+            <div>
+              <a href="/html/cart&checkout/information.html"
+                ><p>Information</p></a
+              >
+            </div>
+          </div>
+
+          <div class="dash"></div>
+
+          <div class="container-circle-checked current">
+            <div class="circle-checked"><a href="/html/cart&checkout/shipping.html">
+              <i class="fa-solid fa-check"></a></i>
+            </div>
+            <div><a href="/html/cart&checkout/shipping.html"><p>Shipping</p></a></div>
           </div>
 
           <div class="dash"></div>
@@ -359,13 +371,13 @@
           <!-- button return and continue -->
           <section class="container-button-return-continue">
             <div>
-              <a href="/html/cart&checkout/shoppingcart.html"
+              <a href="/html/cart&checkout/shipping.html"
                 ><i class="fa-solid fa-angle-left"></i> Return to Shipping</a
               >
             </div>
 
             <div class="button button-design button-return-continue">
-              <a href="/index.html"
+              <a href="/html/cart&checkout/complete.html"
                 >Pay now <i class="fa-solid fa-angle-right"></i
               ></a>
             </div>
