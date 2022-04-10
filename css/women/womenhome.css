@@ -12,10 +12,6 @@ header {
   color: #05272f;
 }
 
-.container-filter-button {
-  min-height: 300px;
-}
-
 .filter-button {
   position: absolute;
   left: 45%;
