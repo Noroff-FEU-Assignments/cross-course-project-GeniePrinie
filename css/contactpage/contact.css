@@ -61,10 +61,6 @@ body {
   margin-bottom: 20px;
 }
 
-.container-label-input div {
-  margin-bottom: 5px;
-}
-
 .container-label-input input {
   margin-top: 3px;
   margin-bottom: 5px;
@@ -76,6 +72,10 @@ body {
 }
 
 .container-label-input textarea {
+  margin-top: 3px;
+  margin-bottom: 5px;
+  padding: 10px;
+  font-size: 16px;
   height: 100px;
   width: 100%;
   border-radius: 8px;
