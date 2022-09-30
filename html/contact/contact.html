@@ -101,55 +101,74 @@
           <p>*Required</p>
         </div>
       </section>
+
       <!-- form to fill -->
       <section class="container-contact-form">
-        <div class="container-contact-position">
-          <form method="post" class="container-form">
-            <div class="container-info">
-              <div class="container-label-input container-label-box">
-                <div>
-                  <div><label for="fullname">Name*</label></div>
-                  <div><input type="text" name="fullName" id="fullname" /></div>
-                </div>
-              </div>
-
-              <div class="container-label-input container-label-box">
-                <div>
-                  <div><label for="ordernumber">Order #</label></div>
-                  <div>
-                    <input type="text" name="orderNumber" id="ordernumber" />
-                  </div>
-                </div>
-              </div>
-
-              <div class="container-label-input container-label-box">
-                <div>
-                  <div><label for="email">E-mail*</label></div>
-                  <div><input type="email" name="email" id="email" /></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="container-label-input">
-              <div>
-                <div><label for="message">Message</label></div>
-                <div>
-                  <textarea
-                    type="text"
-                    name="message"
-                    id="message"
-                    placeholder="Write a message..."
-                    class="contact-message"
-                  ></textarea>
-                </div>
-              </div>
-            </div>
-          </form>
+        <div class="message">
+          <p id=""></p>
         </div>
-        <!-- send button -->
-        <div class="button button-design contact-button">
-          <a href="#">Send</a>
-        </div>
+
+        <form class="container-form" id="contactForm">
+          <div class="container-label-input">
+            <label for="name"
+              >Name*
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Full name"
+              />
+            </label>
+
+            <div class="formError" id="nameError">
+              <p></p>
+            </div>
+          </div>
+
+          <div class="container-label-input">
+            <label for="ordernumber"
+              >Order #
+              <input
+                type="text"
+                name="orderNumber"
+                id="ordernumber"
+                placeholder="#012345"
+            /></label>
+          </div>
+
+          <div class="container-label-input">
+            <label for="email"
+              >Email*
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="e.g. example@email.com"
+              />
+            </label>
+
+            <div class="formError" id="emailError">
+              <p></p>
+            </div>
+          </div>
+
+          <div class="container-label-input">
+            <label for="textMessage"
+              >Message
+              <textarea
+                type="text"
+                name="textMessage"
+                id="textMessage"
+                placeholder="Write a message..."
+                class="contact-message"
+              ></textarea>
+            </label>
+          </div>
+          <!-- send button -->
+          <div class="button button-design contact-button">
+            <button class="submitButton">Submit</button>
+          </div>
+        </form>
       </section>
     </main>
 
@@ -222,5 +241,6 @@
         <p>Copyright &copy;</p>
       </section>
     </footer>
+    <script src="/js/contact.js"></script>
   </body>
 </html>

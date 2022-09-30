@@ -69,31 +69,6 @@
     text-align: center;
   }
 
-  /* CONTACT PAGE */
-  .container-contact-position {
-    display: flex;
-    justify-content: center;
-  }
-
-  .container-form {
-    flex-direction: column;
-    min-width: 790px;
-  }
-
-  .container-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .container-label-box {
-    width: 250px;
-  }
-
-  .contact-button {
-    justify-content: center;
-  }
-
   /* specific product */
   .container-showcase-flex-column {
     display: flex;
