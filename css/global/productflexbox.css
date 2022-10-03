@@ -9,67 +9,48 @@
 
 .products h2 {
   font-size: 20px;
-  min-height: 50px;
-  margin-bottom: 0;
   font-weight: bolder;
+  padding-top: 10px;
+  padding-bottom: 0px;
 }
 
 .products p {
   font-size: 16px;
   font-weight: bolder;
   margin-top: 0;
+  padding-top: 0;
 }
 
-.container-products-wrapper {
+.card-wrapper {
   display: flex;
-  justify-content: space-evenly;
-}
-
-.container-products-wrapper img {
-  width: 100%;
-}
-
-.container-products-block-row {
-  display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
+  justify-content: space-around;
 }
 
-.container-products-block-column {
+.card-item {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  min-width: 305px;
+  height: 560px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(247, 247, 247);
+  padding: 10px 0px 10px 0px;
+  margin-bottom: 30px;
+  box-shadow: 2px 2px 5px rgb(225, 225, 225);
 }
 
-.container-products-block {
-  min-width: 180px;
-  min-height: 390px;
-  padding-right: 7px;
+.card-item img {
+  width: 250px;
+  height: 360px;
 }
 
-.circle {
-  cursor: pointer;
-  padding: 5px;
-  border-radius: 50%;
-  border: 1px solid black;
-  height: 5px;
-  width: 5px;
-  display: inline-block;
+.card-item p,
+.card-item h2 {
+  margin-top: 10px;
 }
-
-.circle-black {
-  background-color: #000;
-}
-
-.circle-red {
-  background-color: rgb(182, 17, 17);
-}
-
-.circle-white {
-  background-color: #fff;
-}
-
-.circle-yellow {
-  background-color: rgb(244, 209, 12);
+.card-item span {
+  display: block;
+  margin-top: 10px;
 }
