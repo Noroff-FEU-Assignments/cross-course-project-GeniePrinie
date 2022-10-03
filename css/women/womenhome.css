@@ -8,7 +8,7 @@ header {
 }
 
 .filter-button a {
-  background-color: #f3ca00;
+  background-color: var(--main-yellow-color);
   color: #05272f;
 }
 

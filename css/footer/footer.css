@@ -34,7 +34,7 @@
 
 .container-social i {
   margin: 0 5px 10px 0px;
-  background-color: #f3ca00;
+  background-color: var(--main-yellow-color);
   padding: 12px;
   border-radius: 50%;
 }

@@ -9,20 +9,37 @@ a {
   text-decoration: none;
   color: black;
 }
+
+div {
+  --main-darkblue-color: rgba(10, 54, 65, 1);
+}
+
+div {
+  --main-yellow-color: rgb(243, 202, 0);
+}
+
 .active {
   text-decoration: underline;
 }
 
 .button-design a {
-  background-color: rgba(10, 54, 65, 1);
+  background-color: var(--main-darkblue-color);
   padding: 10px 30px;
   border-radius: 5px;
   color: #fff;
 }
 
 .filter-button a {
-  background-color: #f3ca00;
+  background-color: var(--main-yellow-color);
   color: #05272f;
+}
+
+.addToCartBtn {
+  background-color: var(--main-darkblue-color);
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
 }
 
 .breadcrumbs {
