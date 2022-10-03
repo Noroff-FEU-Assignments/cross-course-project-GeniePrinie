@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/css/global/clothingkinds.css" />
     <link rel="stylesheet" href="/css/global/productflexbox.css" />
     <link rel="stylesheet" href="/css/global/jacket-cartheader.css" />
+    <link rel="stylesheet" href="/css/global/shoppingcart.css" />
     <link rel="stylesheet" href="/css/header/freeshipping.css" />
     <link rel="stylesheet" href="/css/header/navbar.css" />
     <link rel="stylesheet" href="/css/footer/footer.css" />
@@ -57,21 +58,53 @@
               <img src="/images/RD-logo.jpg" alt="Rainydays logo" />
             </a>
           </span>
+
           <!-- nav header -->
           <span class="container-nav">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
             <a href="#" class="desktop">Shop</a>
-            <a href="#" class="desktop">Activities</a>
             <a href="/html/about/about.html" class="desktop">About</a>
             <a href="#" class="desktop">Account</a>
-            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+
+            <span class="cart-box">
+              <span class="cart-icon">
+                <i class="fa-solid fa-cart-shopping fa-2x"></i>
+              </span>
+              <div class="whole-cart-window hide">
+                <h1>shopping Cart</h1>
+                <div class="cart-wrapper">
+                  <!-- item 1 in cart -->
+                  <!-- <div class="cart-item">
+                    <img src="/images/women/item1.jpg" />
+                    <div class="details">
+                      <h3>Item Name</h3>
+                      <p>
+                        <span>Color: White</span>
+                        <span class="quantity">Quantity: 1</span>
+                        <span class="price">Price: $23.44</span>
+                      </p>
+                    </div>
+                    <div class="cancel">
+                      <i class="fas fa-window-close"></i>
+                    </div>
+                  </div> -->
+
+                  <!-- done -->
+                </div>
+                <div class="subtotal">Subtotal: $0.00</div>
+                <div class="checkout">Checkout</div>
+                <div class="view-cart">View Cart</div>
+              </div>
+            </span>
+
+            <!-- hamburger menu needs to be fixed with Colt -->
             <label for="hamburger-menu"
-              ><i class="fa-solid fa-bars phone"></i
-            ></label>
+              ><i class="fa-solid fa-bars phone"></i>
+            </label>
+
             <input type="checkbox" id="hamburger-menu" />
             <div class="container-hamburger-dropdown-list">
               <div><a href="#">Shop</a></div>
-              <div><a href="#">Activities</a></div>
               <div><a href="/html/about/about.html">About</a></div>
               <div><a href="#">Account</a></div>
               <div><a href="#">Support</a></div>
@@ -103,284 +136,171 @@
           <a href="#"><i class="fa-solid fa-filter"></i> Filter</a>
         </div>
       </section>
+
       <!-- product showcase -->
-
-      <!-- spring -->
       <section class="products">
-        <h1>Spring Jacket</h1>
+        <h1>Jackets</h1>
 
-        <!-- fist jacket -->
-        <div class="container-products-wrapper">
-          <div class="container-products-block-row">
-            <div class="container-products-block-column">
-              <div class="container-products-block">
-                <a href="/html/women/specificproduct.html">
-                  <img
-                    src="/images/specific-jacket/sarah-stand.JPG"
-                    alt="a girl wearing Rainydays Classic Weather Pull-over in offwhite color" />
-                  <h2>Classic Weather Pull-over</h2>
-                  <p>$90.00 USD</p>
-                  <div class="circle circle-white"></div
-                ></a>
-              </div>
-            </div>
-            <!-- second jacket -->
-            <div class="container-products-block-column">
-              <div class="container-products-block">
-                <a href="/html/women/specificproduct.html">
-                  <img
-                    src="/images/specific-jacket/sarah-stand.JPG"
-                    alt="a girl wearing Rainydays Classic Weather Pull-over in offwhite color"
-                  />
-                  <h2>Classic Weather Pull-over</h2>
-                  <p>$90.00 USD</p>
-                  <div class="circle circle-white"></div>
-                </a>
-              </div>
-            </div>
+        <!-- item 1 -->
+        <div class="card-wrapper">
+          <div data-id="1" class="card-item">
+            <a href="/html/women/specificproduct.html">
+              <img
+                src="/images/women/item1.jpg"
+                alt="a girl wearing Rainydays Classic Weather Pull-over in offwhite color"
+              />
+
+              <h2>Pull-over</h2>
+              <p>
+                <span>Color: White</span>
+                <span>$90.00</span>
+              </p>
+            </a>
+            <span class="addToCartBtn">Add To Cart</span>
           </div>
 
-          <div class="container-products-block-row">
-            <!-- third jacket -->
-            <div class="container-products-block-column">
-              <div class="container-products-block">
-                <a href="/html/women/specificproduct.html">
-                  <img
-                    src="/images/specific-jacket/sarah-stand.JPG"
-                    alt="a girl wearing Rainydays Classic Weather Pull-over in offwhite color"
-                  />
-                  <h2>Classic Weather Pull-over</h2>
-                  <p>$90.00 USD</p>
-                  <div class="circle circle-white"></div>
-                </a>
-              </div>
-            </div>
-
-            <!-- forth jacket -->
-            <div class="container-products-block-column">
-              <div class="container-products-block">
-                <a href="/html/women/specificproduct.html">
-                  <img
-                    src="/images/specific-jacket/sarah-stand.JPG"
-                    alt="a girl wearing Rainydays Classic Weather Pull-over in offwhite color"
-                  />
-                  <h2>Classic Weather Pull-over</h2>
-                  <p>$90.00 USD</p>
-                  <div class="circle circle-white"></div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- summer -->
-      <section class="products">
-        <h1>Summer Jacket</h1>
-
-        <!-- fist jacket -->
-        <div class="container-products-wrapper">
-          <div class="container-products-block-row">
-            <div class="container-products-block-column">
-              <div class="container-products-block">
-                <a href="#">
-                  <img
-                    src="/images/women/classic-rain-jacket.jpg"
-                    alt="a girl wearing Rainydays Classic Rain Jacket in red color" />
-                  <h2>Classic Rain Jacket</h2>
-                  <p>$90.00 USD</p>
-                  <div class="circle circle-red"></div
-                ></a>
-              </div>
-            </div>
-            <!-- second jacket -->
-            <div class="container-products-block-column">
-              <div class="container-products-block">
-                <a href="#">
-                  <img
-                    src="/images/women/classic-rain-jacket.jpg"
-                    alt="a girl wearing Rainydays Classic Rain Jacket in red color"
-                  />
-                  <h2>Classic Rain Jacket</h2>
-                  <p>$90.00 USD</p>
-                  <div class="circle circle-red"></div>
-                </a>
-              </div>
-            </div>
+          <!-- item 2 -->
+          <div data-id="2" class="card-item">
+            <a href="/html/women/specificproduct.html">
+              <img
+                src="/images/women/item2.jpg"
+                alt="a girl wearing Rainydays Rain jacket in red color"
+              />
+              <h2>Rain Jacket</h2>
+              <p>
+                <span>Color: Red</span>
+                <span>$90.00</span>
+              </p>
+            </a>
+            <span class="addToCartBtn">Add To Cart</span>
           </div>
 
-          <div class="container-products-block-row">
-            <!-- third jacket -->
-            <div class="container-products-block-column">
-              <div class="container-products-block">
-                <a href="#">
-                  <img
-                    src="/images/women/classic-rain-jacket.jpg"
-                    alt="a girl wearing Rainydays Classic Rain Jacket in red color"
-                  />
-                  <h2>Classic Rain Jacket</h2>
-                  <p>$90.00 USD</p>
-                  <div class="circle circle-red"></div>
-                </a>
-              </div>
-            </div>
-
-            <!-- forth jacket -->
-            <div class="container-products-block-column">
-              <div class="container-products-block">
-                <a href="#">
-                  <img
-                    src="/images/women/classic-rain-jacket.jpg"
-                    alt="a girl wearing Rainydays Classic Rain Jacket in red color"
-                  />
-                  <h2>Classic Rain Jacket</h2>
-                  <p>$90.00 USD</p>
-                  <div class="circle circle-red"></div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- fall -->
-      <section class="products">
-        <h1>Fall Jacket</h1>
-
-        <!-- fist jacket -->
-        <div class="container-products-wrapper">
-          <div class="container-products-block-row">
-            <div class="container-products-block-column">
-              <div class="container-products-block">
-                <a href="#">
-                  <img
-                    src="/images/women/classic-down-jacket.jpg"
-                    alt="a girl wearing Rainydays Classic Down Jacket in mustardy yellow color" />
-                  <h2>Classic Down Jacket</h2>
-                  <p>$90.00 USD</p>
-                  <div class="circle circle-yellow"></div
-                ></a>
-              </div>
-            </div>
-            <!-- second jacket -->
-            <div class="container-products-block-column">
-              <div class="container-products-block">
-                <a href="#">
-                  <img
-                    src="/images/women/classic-down-jacket.jpg"
-                    alt="a girl wearing Rainydays Classic Down Jacket in mustardy yellow color"
-                  />
-                  <h2>Classic Down Jacket</h2>
-                  <p>$90.00 USD</p>
-                  <div class="circle circle-yellow"></div>
-                </a>
-              </div>
-            </div>
+          <!-- item 3 -->
+          <div data-id="3" class="card-item">
+            <a href="/html/women/specificproduct.html">
+              <img
+                src="/images/women/item3.jpg"
+                alt="a girl wearing Rainydays Down jacket in yellow color"
+              />
+              <h2>Down Jacket</h2>
+              <p>
+                <span>Color: Yellow</span>
+                <span>$90.00</span>
+              </p>
+            </a>
+            <span class="addToCartBtn">Add To Cart</span>
           </div>
 
-          <div class="container-products-block-row">
-            <!-- third jacket -->
-            <div class="container-products-block-column">
-              <div class="container-products-block">
-                <a href="#">
-                  <img
-                    src="/images/women/classic-down-jacket.jpg"
-                    alt="a girl wearing Rainydays Classic Down Jacket in mustardy yellow color"
-                  />
-                  <h2>Classic Down Jacket</h2>
-                  <p>$90.00 USD</p>
-                  <div class="circle circle-yellow"></div>
-                </a>
-              </div>
-            </div>
-
-            <!-- forth jacket -->
-            <div class="container-products-block-column">
-              <div class="container-products-block">
-                <a href="#">
-                  <img
-                    src="/images/women/classic-down-jacket.jpg"
-                    alt="a girl wearing Rainydays Classic Down Jacket in mustardy yellow color"
-                  />
-                  <h2>Classic Down Jacket</h2>
-                  <p>$90.00 USD</p>
-                  <div class="circle circle-yellow"></div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- winter -->
-      <section class="products">
-        <h1>Winter Jacket</h1>
-
-        <!-- fist jacket -->
-        <div class="container-products-wrapper">
-          <div class="container-products-block-row">
-            <div class="container-products-block-column">
-              <div class="container-products-block">
-                <a href="#">
-                  <img
-                    src="/images/women/classic-weather-jacket.jpg"
-                    alt="a girl wearing Rainydays Classic Weather Jacket in white color" />
-                  <h2>Classic Weather Jacket</h2>
-                  <p>$90.00 USD</p>
-                  <div class="circle circle-black"></div>
-                  <div class="circle circle-white"></div
-                ></a>
-              </div>
-            </div>
-            <!-- second jacket -->
-            <div class="container-products-block-column">
-              <div class="container-products-block">
-                <a href="#">
-                  <img
-                    src="/images/women/classic-weather-jacket.jpg"
-                    alt="a girl wearing Rainydays Classic Weather Jacket in white color"
-                  />
-                  <h2>Classic Weather Jacket</h2>
-                  <p>$90.00 USD</p>
-                  <div class="circle circle-black"></div>
-                  <div class="circle circle-white"></div>
-                </a>
-              </div>
-            </div>
+          <!-- item 4 -->
+          <div data-id="4" class="card-item">
+            <a href="/html/women/specificproduct.html">
+              <img
+                src="/images/women/item4.jpg"
+                alt="a girl wearing Rainydays Waffle jacket in white color"
+              />
+              <h2>Waffle Jacket</h2>
+              <p>
+                <span>Color: White</span>
+                <span>$90.00</span>
+              </p>
+            </a>
+            <span class="addToCartBtn">Add To Cart</span>
           </div>
 
-          <div class="container-products-block-row">
-            <!-- third jacket -->
-            <div class="container-products-block-column">
-              <div class="container-products-block">
-                <a href="#">
-                  <img
-                    src="/images/women/classic-weather-jacket.jpg"
-                    alt="a girl wearing Rainydays Classic Weather Jacket in white color"
-                  />
-                  <h2>Classic Weather Jacket</h2>
-                  <p>$90.00 USD</p>
-                  <div class="circle circle-black"></div>
-                  <div class="circle circle-white"></div>
-                </a>
-              </div>
-            </div>
+          <!-- item 5 -->
+          <div data-id="5" class="card-item">
+            <a href="/html/women/specificproduct.html">
+              <img
+                src="/images/women/item5.jpg"
+                alt="a girl wearing Rainydays Waffle jacket with fur hoodie in black color"
+              />
+              <h2>Waffle fur Jacket</h2>
+              <p>
+                <span>Color: Black</span>
+                <span>$90.00</span>
+              </p>
+            </a>
+            <span class="addToCartBtn">Add To Cart</span>
+          </div>
 
-            <!-- forth jacket -->
-            <div class="container-products-block-column">
-              <div class="container-products-block">
-                <a href="#">
-                  <img
-                    src="/images/women/classic-weather-jacket.jpg"
-                    alt="a girl wearing Rainydays Classic Weather Jacket in white color"
-                  />
-                  <h2>Classic Weather Jacket</h2>
-                  <p>$90.00 USD</p>
-                  <div class="circle circle-black"></div>
-                  <div class="circle circle-white"></div>
-                </a>
-              </div>
-            </div>
+          <!-- item 6 -->
+          <div data-id="6" class="card-item">
+            <a href="/html/women/specificproduct.html">
+              <img
+                src="/images/women/item6.jpg"
+                alt="a girl wearing Rainydays Wind jacket in magenta color"
+              />
+              <h2>Wind Jacket</h2>
+              <p>
+                <span>Color: Magenta</span>
+                <span>$90.00</span>
+              </p>
+            </a>
+            <span class="addToCartBtn">Add To Cart</span>
+          </div>
+
+          <!-- item 7 -->
+          <div data-id="7" class="card-item">
+            <a href="/html/women/specificproduct.html">
+              <img
+                src="/images/women/item7.jpg"
+                alt="a girl wearing Rainydays Puffer jacket in white color"
+              />
+              <h2>Puffer Jacket</h2>
+              <p>
+                <span>Color: White</span>
+                <span>$90.00</span>
+              </p>
+            </a>
+            <span class="addToCartBtn">Add To Cart</span>
+          </div>
+
+          <!-- item 8 -->
+          <div data-id="8" class="card-item">
+            <a href="/html/women/specificproduct.html">
+              <img
+                src="/images/women/item8.jpg"
+                alt="a girl wearing Rainydays Puffer jacket in blue color"
+              />
+              <h2>Puffer Jacket</h2>
+              <p>
+                <span>Color: Blue</span>
+                <span>$90.00</span>
+              </p>
+            </a>
+            <span class="addToCartBtn">Add To Cart</span>
+          </div>
+
+          <!-- item 9 -->
+          <div data-id="9" class="card-item">
+            <a href="/html/women/specificproduct.html">
+              <img
+                src="/images/women/item9.jpg"
+                alt="a girl wearing Rainydays Down jacket with hoodie in black color"
+              />
+              <h2>Down Jacket with hoodie</h2>
+              <p>
+                <span>Color: Black</span>
+                <span>$90.00</span>
+              </p>
+            </a>
+            <span class="addToCartBtn">Add To Cart</span>
+          </div>
+
+          <!-- item 10 -->
+          <div data-id="10" class="card-item">
+            <a href="/html/women/specificproduct.html">
+              <img
+                src="/images/women/item10.jpg"
+                alt="a girl wearing Rainydays Rain jacket in grey color"
+              />
+              <h2>Rain Jacket</h2>
+              <p>
+                <span>Color: Grey</span>
+                <span>$90.00</span>
+              </p>
+            </a>
+            <span class="addToCartBtn">Add To Cart</span>
           </div>
         </div>
       </section>
@@ -455,5 +375,6 @@
         <p>Copyright &copy;</p>
       </section>
     </footer>
+    <script src="/js/script.js"></script>
   </body>
 </html>
