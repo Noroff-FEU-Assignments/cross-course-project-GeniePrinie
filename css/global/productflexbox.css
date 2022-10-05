@@ -1,3 +1,5 @@
+/* .products is .container */
+
 .products {
   padding: 20px 5%;
 }
@@ -9,41 +11,45 @@
 
 .products h2 {
   font-size: 20px;
-  font-weight: bolder;
+  /* font-weight: bolder; */
+  text-transform: uppercase;
   padding-top: 10px;
   padding-bottom: 0px;
 }
 
 .products p {
   font-size: 16px;
-  font-weight: bolder;
+  /* font-weight: bolder; */
   margin-top: 0;
   padding-top: 0;
 }
 
-.card-wrapper {
+.results {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
+/* .card-item = .cards */
 .card-item {
-  display: flex;
-  flex-direction: column;
-  min-width: 305px;
+  /* display: flex;
+  flex-direction: column; */
+  /* min-width: 305px;
   height: 560px;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   text-align: center;
-  background-color: rgb(247, 247, 247);
-  padding: 10px 0px 10px 0px;
-  margin-bottom: 30px;
-  box-shadow: 2px 2px 5px rgb(225, 225, 225);
+
+  /* background-color: rgb(247, 247, 247); */
+  padding: 0px 0px 10px 0px;
+  margin: 0px 30px 40px;
+  /* box-shadow: 2px 2px 5px rgb(225, 225, 225); */
 }
 
 .card-item img {
   width: 250px;
   height: 360px;
+  border-radius: 15px;
 }
 
 .card-item p,

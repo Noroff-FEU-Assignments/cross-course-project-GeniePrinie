@@ -8,7 +8,7 @@
       name="description"
       content="Women's Jacket list page for Rainydays outdoor wear website. We are focusing manily on jackets. Rainydays jackets are durable, weatherproof, rainproof, light, compact, and stylish."
     />
-    <title>Rainydays | Jackets</title>
+    <title>Rainydays | Women Jackets</title>
     <script
       src="https://kit.fontawesome.com/2a0a00e374.js"
       crossorigin="anonymous"
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="/css/global/clothingkinds.css" />
     <link rel="stylesheet" href="/css/global/productflexbox.css" />
     <link rel="stylesheet" href="/css/global/jacket-cartheader.css" />
-    <link rel="stylesheet" href="/css/global/shoppingcart.css" />
+    <!-- <link rel="stylesheet" href="/css/global/shoppingcart.css" /> -->
     <link rel="stylesheet" href="/css/header/freeshipping.css" />
     <link rel="stylesheet" href="/css/header/navbar.css" />
     <link rel="stylesheet" href="/css/footer/footer.css" />
@@ -66,15 +66,17 @@
             <a href="/html/about/about.html" class="desktop">About</a>
             <a href="#" class="desktop">Account</a>
 
-            <span class="cart-box">
-              <span class="cart-icon">
-                <i class="fa-solid fa-cart-shopping fa-2x"></i>
-              </span>
-              <div class="whole-cart-window hide">
-                <h1>shopping Cart</h1>
-                <div class="cart-wrapper">
-                  <!-- item 1 in cart -->
-                  <!-- <div class="cart-item">
+            <!-- <span class="cart-box"> -->
+            <!-- <span class="cart-icon"> -->
+            <a href="/html/cart&checkout/shoppingcart.html"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+            <!-- </span> -->
+            <!-- <div class="whole-cart-window hide">
+                <h1>Shopping Cart</h1>
+                <div class="cart-wrapper">  -->
+            <!-- item 1 in cart -->
+            <!-- <div class="cart-item">
                     <img src="/images/women/item1.jpg" />
                     <div class="details">
                       <h3>Item Name</h3>
@@ -89,13 +91,13 @@
                     </div>
                   </div> -->
 
-                  <!-- done -->
-                </div>
+            <!-- done -->
+            <!-- </div>
                 <div class="subtotal">Subtotal: $0.00</div>
                 <div class="checkout">Checkout</div>
                 <div class="view-cart">View Cart</div>
               </div>
-            </span>
+            </span> -->
 
             <!-- hamburger menu needs to be fixed with Colt -->
             <label for="hamburger-menu"
@@ -138,61 +140,69 @@
       </section>
 
       <!-- product showcase -->
+      <!-- .products = .container -->
       <section class="products">
         <h1>Jackets</h1>
-
-        <!-- item 1 -->
         <div class="card-wrapper">
-          <div data-id="1" class="card-item">
-            <a href="/html/women/specificproduct.html">
-              <img
-                src="/images/women/item1.jpg"
-                alt="a girl wearing Rainydays Classic Weather Pull-over in offwhite color"
-              />
+          <!-- product list -->
+          <div class="results"></div>
 
+          <!-- item 1 -->
+          <!-- <div class="card-item">
+            <a href="/html/women/specificproduct.html">
+            <img
+              src="/images/women/item1.jpg"
+              alt="a girl wearing Rainydays Pull-over in white color"
+            />
+            <div class="details">
               <h2>Pull-over</h2>
               <p>
                 <span>Color: White</span>
-                <span>$90.00</span>
+                <span class="price">$90.00</span>
               </p>
+            </div>
+
             </a>
             <span class="addToCartBtn">Add To Cart</span>
-          </div>
+          </div> -->
 
           <!-- item 2 -->
-          <div data-id="2" class="card-item">
+
+          <!-- <div data-id="2" class="card-item">
             <a href="/html/women/specificproduct.html">
-              <img
-                src="/images/women/item2.jpg"
-                alt="a girl wearing Rainydays Rain jacket in red color"
-              />
+            <img
+              src="/images/women/item2.jpg"
+              alt="a girl wearing Rainydays Rain jacket in red color"
+            />
+            </a>
+            <div class="details">
               <h2>Rain Jacket</h2>
+
               <p>
                 <span>Color: Red</span>
-                <span>$90.00</span>
+                <span class="price">$90.00</span>
+                <span class="addToCartBtn">Add To Cart</span>
               </p>
-            </a>
-            <span class="addToCartBtn">Add To Cart</span>
-          </div>
+            </div>
+          </div> -->
 
           <!-- item 3 -->
-          <div data-id="3" class="card-item">
-            <a href="/html/women/specificproduct.html">
+          <!-- .card-item = .cards -->
+          <!-- <a href="/html/women/specificproduct.html?id=${result.id}">
+            <div data-id="${result.id}" class="card-item">
               <img
-                src="/images/women/item3.jpg"
-                alt="a girl wearing Rainydays Down jacket in yellow color"
+                src="/images/women/${result.image}"
+                alt="a girl wearing Rainydays ${result.name} in ${result.color} color"
               />
-              <h2>Down Jacket</h2>
-              <p>
-                <span>Color: Yellow</span>
-                <span>$90.00</span>
-              </p>
-            </a>
-            <span class="addToCartBtn">Add To Cart</span>
-          </div>
+              <h2>${result.name}</h2>
+              <p>Color: ${result.color}</p>
+
+              <p>$${result.price}</p>
+            </div>
+          </a> -->
 
           <!-- item 4 -->
-          <div data-id="4" class="card-item">
+          <!-- <div data-id="4" class="card-item">
             <a href="/html/women/specificproduct.html">
               <img
                 src="/images/women/item4.jpg"
@@ -205,10 +215,10 @@
               </p>
             </a>
             <span class="addToCartBtn">Add To Cart</span>
-          </div>
+          </div> -->
 
           <!-- item 5 -->
-          <div data-id="5" class="card-item">
+          <!-- <div data-id="5" class="card-item">
             <a href="/html/women/specificproduct.html">
               <img
                 src="/images/women/item5.jpg"
@@ -221,10 +231,10 @@
               </p>
             </a>
             <span class="addToCartBtn">Add To Cart</span>
-          </div>
+          </div> -->
 
           <!-- item 6 -->
-          <div data-id="6" class="card-item">
+          <!-- <div data-id="6" class="card-item">
             <a href="/html/women/specificproduct.html">
               <img
                 src="/images/women/item6.jpg"
@@ -237,10 +247,10 @@
               </p>
             </a>
             <span class="addToCartBtn">Add To Cart</span>
-          </div>
+          </div> -->
 
           <!-- item 7 -->
-          <div data-id="7" class="card-item">
+          <!-- <div data-id="7" class="card-item">
             <a href="/html/women/specificproduct.html">
               <img
                 src="/images/women/item7.jpg"
@@ -253,10 +263,10 @@
               </p>
             </a>
             <span class="addToCartBtn">Add To Cart</span>
-          </div>
+          </div> -->
 
           <!-- item 8 -->
-          <div data-id="8" class="card-item">
+          <!-- <div data-id="8" class="card-item">
             <a href="/html/women/specificproduct.html">
               <img
                 src="/images/women/item8.jpg"
@@ -269,10 +279,10 @@
               </p>
             </a>
             <span class="addToCartBtn">Add To Cart</span>
-          </div>
+          </div> -->
 
           <!-- item 9 -->
-          <div data-id="9" class="card-item">
+          <!-- <div data-id="9" class="card-item">
             <a href="/html/women/specificproduct.html">
               <img
                 src="/images/women/item9.jpg"
@@ -285,10 +295,10 @@
               </p>
             </a>
             <span class="addToCartBtn">Add To Cart</span>
-          </div>
+          </div> -->
 
           <!-- item 10 -->
-          <div data-id="10" class="card-item">
+          <!-- <div data-id="10" class="card-item">
             <a href="/html/women/specificproduct.html">
               <img
                 src="/images/women/item10.jpg"
@@ -301,7 +311,7 @@
               </p>
             </a>
             <span class="addToCartBtn">Add To Cart</span>
-          </div>
+          </div> -->
         </div>
       </section>
     </main>
@@ -375,6 +385,6 @@
         <p>Copyright &copy;</p>
       </section>
     </footer>
-    <script src="/js/script.js"></script>
+    <script type="module" src="/js/jacketlist.js"></script>
   </body>
 </html>

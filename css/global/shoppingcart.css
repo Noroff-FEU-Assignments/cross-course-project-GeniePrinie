@@ -7,7 +7,7 @@
   position: fixed;
   left: 72%;
   top: 20%;
-  border: solid 1px blue;
+  /* border: solid 1px blue; */
   padding: 10px 5px;
   margin-right: 5px;
   /* background-color: #fff; */
@@ -18,8 +18,8 @@
   /* position: fixed; */
   /* display: flex;
   flex-direction: column; */
-  position: absolute;
-  right: 0%;
+  position: relative;
+  right: 10%;
   top: -22%;
 }
 
@@ -52,15 +52,19 @@
   margin: 10px auto;
   padding: 10px 15px;
 }
-.view-cart {
+.continue-shopping {
   background-color: rgb(255, 255, 255);
   border: 2px solid var(--main-darkblue-color);
-
   color: var(--main-darkblue-color);
 }
 
 .cart-icon {
   text-align: right;
+}
+
+.cart-summary {
+  display: flex;
+  flex-direction: column;
 }
 
 .cart-item {

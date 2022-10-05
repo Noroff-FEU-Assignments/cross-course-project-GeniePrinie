@@ -1,0 +1,85 @@
+{
+    "cartItems":
+    [
+        {
+            "id":"1",
+            "image": "item1.jpg",
+            "name": "Pull-over",
+            "color": "White",
+            "price": "90.00",
+            "quantity":1
+        },
+        {
+            "id":"2",
+            "image": "item2.jpg",
+            "name": "Rain Jacket",
+            "color": "Red",
+            "price": "90.00",
+            "quantity":1
+        },
+        {
+            "id":"3",
+            "image": "item3.jpg",
+            "name": "Down Jacket",
+            "color": "Yellow",
+            "price": "90.00",
+            "quantity":1
+        },
+        {
+            "id":"4",
+            "image": "item4.jpg",
+            "name": "Weather Jacket",
+            "color": "White",
+            "price": "90.00",
+            "quantity":1
+        },
+        {
+            "id":"5",
+            "image": "item5.jpg",
+            "name": "Waffle fur Jacket",
+            "color": "Black",
+            "price": "90.00",
+            "quantity":1
+        },
+        {
+            "id":"6",
+            "image": "item6.jpg",
+            "name": "Wind Jacket",
+            "color": "Magenta",
+            "price": "90.00",
+            "quantity":1
+        },
+        {
+            "id":"7",
+            "image": "item7.jpg",
+            "name": "Puffer Jacket",
+            "color": "White",
+            "price": "90.00",
+            "quantity":1
+        },
+        {
+            "id":"8",
+            "image": "item8.jpg",
+            "name": "Puffer Jacket",
+            "color": "Blue",
+            "price": "90.00",
+            "quantity":1
+        },
+        {
+            "id":"9",
+            "image": "item9.jpg",
+            "name": "Down Jacket with hoodie",
+            "color": "Black",
+            "price": "90.00",
+            "quantity":1
+        },
+        {
+            "id":"10",
+            "image": "item10.jpg",
+            "name": "Rain Jacket",
+            "color": "Grey",
+            "price": "90.00",
+            "quantity":1
+        }
+    ]
+}

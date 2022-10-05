@@ -4,7 +4,7 @@ class CartItem {
     this.color = color;
     this.image = image;
     this.price = price;
-    this.quatity = 1;
+    this.quantity = 1;
   }
 }
 
@@ -22,9 +22,11 @@ class LocalCart {
     let cart = LocalCart.getLocalCartItems();
     if (cart.has(id)) {
       let mapItem = cart.get(id);
-      mapItem.quatity += 1;
+      mapItem.quantity += 1;
       cart.set(id, mapItem);
-    } else cart.set(id, item);
+    } else {
+      cart.set(id, item);
+    }
     localStorage.setItem(
       LocalCart.key,
       JSON.stringify(Object.fromEntries(cart))
@@ -56,10 +58,35 @@ class LocalCart {
 }
 
 const cartIcon = document.querySelector(".fa-cart-shopping");
-const wholeCartWindown = document.querySelector(".whole-cart-window");
-wholeCartWindown.inWindow = 0;
-
 const addToCartBtns = document.querySelectorAll(".addToCartBtn");
+const wholeCartWindow = document.querySelector(".whole-cart-window");
+wholeCartWindow.inWindow = 0;
+
+//#region Display Cart
+cartIcon.addEventListener("mouseover", () => {
+  if (wholeCartWindow.classList.contains("hide"))
+    wholeCartWindow.classList.remove("hide");
+});
+
+cartIcon.addEventListener("mouseleave", () => {
+  setTimeout(() => {
+    if (wholeCartWindow.inWindow === 0) {
+      wholeCartWindow.classList.add("hide");
+    }
+  }, 500);
+});
+
+wholeCartWindow.addEventListener("mouseover", () => {
+  wholeCartWindow.inWindow = 1;
+});
+
+wholeCartWindow.addEventListener("mouseleave", () => {
+  wholeCartWindow.inWindow = 0;
+  wholeCartWindow.classList.add("hide");
+});
+//#endregion
+
+//#region Add Items to Cart
 addToCartBtns.forEach((btn) => {
   btn.addEventListener("click", addItemFuntion);
 });
@@ -71,32 +98,16 @@ function addItemFuntion(e) {
   const name = e.target.parentElement.previousElementSibling.textContent;
   const color = e.target.parentElement.children[0].textContent;
   let price = e.target.parentElement.children[1].textContent;
-  price = price.replace("Price: $", "");
+  price = price.replace("$", "");
   const item = new CartItem(name, color, image, price);
   LocalCart.addItemToLocalCart(id, item);
   //console.log(price);
 }
+//#endregion
 
-cartIcon.addEventListener("mouseover", () => {
-  if (wholeCartWindown.classList.contains("hide"))
-    wholeCartWindown.classList.remove("hide");
-});
-
-cartIcon.addEventListener("mouseleave", () => {
-  setTimeout(() => {
-    if (wholeCartWindown.inWindow === 0) {
-      wholeCartWindown.classList.add("hide");
-    }
-  }, 500);
-});
-
-wholeCartWindown.addEventListener("mouseover", () => {
-  wholeCartWindown.inWindow = 1;
-});
-
-wholeCartWindown.addEventListener("mouseleave", () => {
-  wholeCartWindown.inWindow = 0;
-  wholeCartWindown.classList.add("hide");
+//#region Update Cart UI
+document.addEventListener("DOMContentLoaded", () => {
+  updateCartUI();
 });
 
 function updateCartUI() {
@@ -112,18 +123,18 @@ function updateCartUI() {
     let price = value.price * value.quantity;
     price = Math.round(price * 100) / 100;
     cartItem.innerHTML = `  <img src="${value.image}" />
-                            <div class="details">
-                                <h2>${value.name}</h2>
-                                <p>
-                                    <span>${value.color}</span>
-                                    <span class="quantity">Quantity: ${value.quantity}</span>
-                                    <span class="price">Price: $${price} USD</span>
-                                </p>
-                            </div>
-                            <div class="cancel">
-                                <i class="fas fa-window-close"></i>
-                            </div>
-    `;
+                              <div class="details">
+                                  <h2>${value.name}</h2>
+                                  <p>
+                                      <span>${value.color}</span>
+                                      <span class="quantity">Quantity: ${value.quantity}</span>
+                                      <span class="price">Price: $${price} USD</span>
+                                  </p>
+                              </div>
+                              <div class="cancel">
+                                  <i class="fas fa-window-close"></i>
+                              </div>
+      `;
 
     cartItem.lastElementChild.addEventListener("click", () => {
       LocalCart.removeItemFromCart(key);
@@ -141,7 +152,4 @@ function updateCartUI() {
     cartIcon.classList.remove("non-empty");
   }
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  updateCartUI();
-});
+//#endregion
