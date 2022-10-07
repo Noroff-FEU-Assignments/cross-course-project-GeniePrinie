@@ -18,10 +18,6 @@ div {
   --main-yellow-color: rgb(243, 202, 0);
 }
 
-.active {
-  text-decoration: underline;
-}
-
 .button-design a {
   background-color: var(--main-darkblue-color);
   padding: 10px 30px;
@@ -43,5 +39,17 @@ div {
 }
 
 .breadcrumbs {
-  padding: 20px 0 0px 20px;
+  position: relative;
+  padding: 20px 0px 0px 20px;
+}
+
+.breadcrumbs,
+.breadcrumbs a {
+  color: black;
+  letter-spacing: 1px;
+}
+
+.active {
+  text-decoration: underline;
+  color: rgb(120, 120, 120) !important;
 }

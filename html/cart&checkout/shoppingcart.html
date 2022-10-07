@@ -46,7 +46,7 @@
     <!-- header here -->
     <header>
       <section class="free-shipping">
-        <p>Free Shipping over $150 USD Worldwide</p>
+        <p>Free Shipping over $200 USD Worldwide</p>
       </section>
 
       <!-- nav bar -->
@@ -60,19 +60,22 @@
           </span>
           <!-- nav header -->
           <span class="container-nav">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
             <a href="#" class="desktop">Shop</a>
-            <a href="#" class="desktop">Activities</a>
             <a href="/html/about/about.html" class="desktop">About</a>
             <a href="#" class="desktop">Account</a>
-            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="/html/cart&checkout/shoppingcart.html"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+
+            <!-- hamburger menu needs to be fixed with Colt -->
             <label for="hamburger-menu"
-              ><i class="fa-solid fa-bars phone"></i
-            ></label>
+              ><i class="fa-solid fa-bars phone"></i>
+            </label>
+
             <input type="checkbox" id="hamburger-menu" />
             <div class="container-hamburger-dropdown-list">
               <div><a href="#">Shop</a></div>
-              <div><a href="#">Activities</a></div>
               <div><a href="/html/about/about.html">About</a></div>
               <div><a href="#">Account</a></div>
               <div><a href="#">Support</a></div>
@@ -83,187 +86,46 @@
     </header>
 
     <!-- main -->
-    <main class="main-shopping-cart">
-      <!-- h1 tag your shopping cart -->
+    <main class="shopping-cart">
       <h1>Your Shopping Cart</h1>
+      <div class="whole-cart-window">
+        <!-- .cart-wrapper -->
+      </div>
 
-      <!-- BLOCK 1 item until price -->
-      <!-- <section class="container-item-block"> -->
-      <!-- need to flex row container-item-block -->
-      <!-- <div class="container-item">
-          <div>
-            <img
-              src="/images/women/item1.jpg"
-              alt="A girl wearing white Rainydays Pull-over"
-            />
-          </div>
-
-          <div>
-            <h2>Pull - over</h2>
-            <div class="color-n-size">
-              <p>Color:</p>
-              <p>White</p>
-            </div>
-            <div class="color-n-size">
-              <p>Size:</p>
-              <p>Extra Small</p>
-            </div>
-          </div>
-        </div> -->
-
-      <!-- PUT item addition, trash icon, price here -->
-      <!-- <div>
-          <div class="container-number">
-            <div class="container-number-n-trash">
-              <div> -->
-      <!-- flex class item-add-subtract-button-->
-      <!-- <div class="item-add-subtract-button">
-                  <div><i class="fa-solid fa-circle-minus"></i></div>
-                  <div><p>1</p></div>
-                  <div><i class="fa-solid fa-circle-plus"></i></div>
-                </div>
-              </div>
-
-              <div class="icon-trash">
-                <i class="fa-solid fa-trash-can"></i>
-              </div>
-            </div>
-
-            <div><p>$90.00 USD</p></div>
-          </div>
-        </div> -->
-      <!-- </section> -->
-
-      <!-- BLOCK 2  continue shopping button, summary, until checkout button-->
-      <!-- <section class="container-summary-block"> -->
-      <!-- THIS SECTION NEEDS TO FLEX row at 800px -->
-
-      <!-- div 1 container-->
-      <!-- <div class="container-button-hint"> -->
-      <!-- <continue shopping button, HINT with truck icon -->
-      <!-- <div class="button button-design button-continue-shopping">
-            <a href="/index.html"
-              ><i class="fa-solid fa-angle-left"></i> Continue Shopping</a
-            >
-          </div>
-
-          <div class="hint-box">
-            <div><i class="fa-solid fa-truck"></i></div>
-            <div><p>Hint:</p></div>
-            <div><p>You are $60.00 away from receiving free shipping!</p></div>
-          </div>
-        </div> -->
-
-      <!-- div 2 container-->
-      <!-- <div class="container-summary-price"> -->
-      <!-- SUMMARY, SUBTOTAL, Checkout button -->
-      <!-- <div><h2>Summary</h2></div>
-
-          <div class="subtotal-price-flex">
-            <div><h3>Subtotal</h3></div>
-            <div><p>$90.00 USD</p></div>
-          </div>
+      <!-- .cart-summary flex row-reverse-->
+      <div class="cart-summary">
+        <!-- <div class="container-summary-price">
+          <div class="subtotal">Subtotal: $0.00</div>
           <div class="calculated-at-check-out">
             <p>
               Shipping, taxes, and discount codes are calculated at checkout.
             </p>
           </div>
 
-          <div class="button button-design button-checkout">
-            <a href="/html/cart&checkout/information.html"
-              >Check Out <i class="fa-solid fa-angle-right"></i
-            ></a>
-          </div>
-        </div> -->
-      <!-- </section> -->
-
-      <!-- Do you want to add anything else? under here-->
-      <section class="products">
-        <h1>Do you want to add anything else?</h1>
-
-        <!-- first rec -->
-        <div class="card-wrapper">
-          <div class="card-item-row">
-            <div class="card-item-column">
-              <div class="card-item">
-                <a href="#">
-                  <div class="add-to-cart-image">
-                    <img
-                      src="/images/women/item4.jpg"
-                      alt="a girl wearing Rainydays Weather Jacket in white color"
-                    />
-
-                    <div class="add-to-cart-icon">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </div>
-                  </div>
-                  <h2>Weather Jacket</h2>
-                  <p>$90.00 USD</p>
-                </a>
-              </div>
-            </div>
-
-            <!-- second rec -->
-            <div class="card-item-column">
-              <div class="card-item">
-                <a href="#">
-                  <div class="add-to-cart-image">
-                    <img
-                      src="/images/women/item2.jpg"
-                      alt="a girl wearing Rainydays Rain Jacket in red color"
-                    />
-                    <div class="add-to-cart-icon">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </div>
-                  </div>
-                  <h2>Rain Jacket</h2>
-                  <p>$90.00 USD</p>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-item-row">
-            <!-- third rec -->
-            <div class="card-item-column">
-              <div class="card-item">
-                <a href="#">
-                  <div class="add-to-cart-image">
-                    <img
-                      src="/images/women/item3.jpg"
-                      alt="a girl wearing Rainydays Down Jacket in mustardy yellow color"
-                    />
-                    <div class="add-to-cart-icon">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </div>
-                  </div>
-                  <h2>Down Jacket</h2>
-                  <p>$90.00 USD</p>
-                </a>
-              </div>
-            </div>
-
-            <!-- forth rec -->
-            <div class="card-item-column">
-              <div class="card-item">
-                <a href="/html/women/specificproduct.html">
-                  <div class="add-to-cart-image">
-                    <img
-                      src="/images/women/item1.jpg"
-                      alt="a girl wearing Rainydays Pull-over in white color"
-                    />
-                    <div class="add-to-cart-icon">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </div>
-                  </div>
-                  <h2>Pull-over</h2>
-                  <p>$90.00 USD</p>
-                </a>
-              </div>
-            </div>
+          <div class="checkout button-checkout button-design">
+            <a href="/html/cart&checkout/information.html">
+              Checkout <i class="fa-solid fa-angle-right"></i>
+            </a>
           </div>
         </div>
-      </section>
+
+        <div class="container-button-hint">
+          <a href="/">
+            <div class="continue-shopping">
+              <i class="fa-solid fa-angle-left"></i> Continue Shopping
+            </div>
+          </a>
+
+          <div class="hint-box">
+            <p>Hint:</p>
+            <p>
+              You are $${result.difference} away from receiving free shipping!<i
+                class="fa-solid fa-truck"
+              ></i>
+            </p>
+          </div>
+        </div> -->
+      </div>
     </main>
 
     <!-- footer under here -->
@@ -335,5 +197,6 @@
         <p>Copyright &copy;</p>
       </section>
     </footer>
+    <script type="module" src="/js/shoppingcart.js"></script>
   </body>
 </html>

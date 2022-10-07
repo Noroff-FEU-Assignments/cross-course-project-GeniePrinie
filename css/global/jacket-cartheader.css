@@ -5,10 +5,6 @@ header {
   background-position: center center;
 }
 
-.breadcrumbs {
-  position: relative;
-}
-
 .filter-button {
   display: inline-block;
   position: absolute;

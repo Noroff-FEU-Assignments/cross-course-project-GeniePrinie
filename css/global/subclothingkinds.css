@@ -1,0 +1,9 @@
+.container-kinds {
+  background-color: rgba(10, 54, 65, 1);
+  height: 100px;
+}
+
+.container-kinds div {
+  border-right: 1px solid white;
+  line-height: 60px;
+}

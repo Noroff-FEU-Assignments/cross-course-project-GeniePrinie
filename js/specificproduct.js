@@ -1,6 +1,6 @@
 import myJson from "../json/products.json" assert { type: "json" };
+import { CartItem, CartStorage } from "/js/cartclasses.js";
 
-//const selectedId = document.querySelector(".id");
 const detailContainer = document.querySelector(".product");
 const pageTitle = document.querySelector("title");
 const currentBreadcrumb = document.querySelector(".current-breadcrumb");
@@ -8,44 +8,41 @@ const currentBreadcrumb = document.querySelector(".current-breadcrumb");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
-
-if (id === null) {
-  location.href = "/";
-}
-
-//selectedId.innerHTML = id;
-
-let result = new Object();
+let item = new Object();
 
 try {
-  const results = myJson.cartItems;
-  for (let i = 0; i < results.length; i++) {
-    if (results[i].id === id) {
-      result = results[i];
+  const items = myJson.cartItems;
+  for (let i = 0; i < items.length; i++) {
+    if (items[i].id === id) {
+      item = items[i];
       break;
     }
   }
 } catch (error) {
-  detailContainer.innerHTML = message("error", error);
+  detailContainer.innerHTML = logError("error", error);
 }
 
-pageTitle.innerHTML = `Rainydays | ${result.name}`;
+function logError(messageType = "success", message = "") {
+  return `<div class="alert ${messageType}">${message}</div>`;
+}
 
-currentBreadcrumb.innerHTML += `${result.name}`;
+pageTitle.innerHTML = `Rainydays | ${item.name}`;
+
+currentBreadcrumb.innerHTML += `${item.name}`;
 
 detailContainer.innerHTML += `
                             <div class="container-showcase-pictures">
                                     <img
-                                        src="/images/women/${result.image}"
-                                        alt="A lady wearing ${result.name} from Rainydays in ${result.color}"
+                                        src="/images/women/${item.image}"
+                                        alt="A lady wearing ${item.name} from Rainydays in ${item.color}"
                                     />
                             </div>
 
                             <div class="container-showcase-text">
 
-                                <h1>${result.name}</h1>
-                                <p>$${result.price} USD</p>
-                                <p>Color: ${result.color}</p>
+                                <h1>${item.name}</h1>
+                                <p>$${item.price} USD</p>
+                                <p>Color: ${item.color}</p>
                                 <h2>Size</h2>
                                 <label for="sizes">
                                     <select name="sizes" id="sizes" class="select-size">
@@ -64,11 +61,7 @@ detailContainer.innerHTML += `
 
                                 <!-- add to cart button -->
                                 <div class="button button-design button-add-to-cart-position addToCartBtn">
-                                    <div>
-                                        <a href="/html/cart&checkout/shoppingcart.html">
-                                            Add to cart <i class="fa-solid fa-cart-shopping"></i>
-                                        </a>
-                                    </div>
+                                    Add to cart <i class="fa-solid fa-cart-shopping"></i>
                                 </div>
                                 <!-- Description -->
                                 <div>
@@ -99,3 +92,10 @@ detailContainer.innerHTML += `
                                 </div>
 
                             </div>`;
+
+const addToCartBtn = document.querySelector(".addToCartBtn");
+
+addToCartBtn.addEventListener("click", function () {
+  const cartItem = new CartItem(item.name, item.color, item.image, item.price);
+  CartStorage.setCart(item.id, cartItem);
+});

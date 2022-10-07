@@ -30,11 +30,6 @@
     pointer-events: none;
   }
   /* HOME PAGE */
-  /* category */
-  .accessory,
-  .gear {
-    display: flex;
-  }
 
   /* main show case */
   .home-first-section-pic img,
@@ -85,32 +80,12 @@
   }
   /* shopping cart */
 
-  .main-shopping-cart {
-    margin: auto 10%;
-  }
-  .container-item-block {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
   .container-item h2 {
     font-size: 1.5em;
   }
 
-  .container-summary-block {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-
   .container-button-hint {
     margin-right: 20px;
-  }
-
-  .button-checkout {
-    justify-content: center;
   }
 
   /* complete page */

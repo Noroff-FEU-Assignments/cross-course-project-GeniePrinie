@@ -1,5 +1,6 @@
 header {
-  background-image: url(/images/women/women-oldlady.jpg);
+  /* background-image: url(/images/jacket:payment/jacket:payment-header.jpg); */
+  background-image: url(/images/women/rainbowjackets.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -7,13 +8,20 @@ header {
   position: relative;
 }
 
-.filter-button a {
-  background-color: var(--main-yellow-color);
-  color: #05272f;
+main {
+  background-image: url(/images/women/women-oldlady.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 75vh;
+  position: relative;
 }
 
-.filter-button {
-  position: absolute;
-  left: 45%;
-  bottom: 30px;
+.breadcrumbs,
+.breadcrumbs a {
+  color: white;
+}
+
+.active {
+  color: rgb(206, 206, 206) !important;
 }

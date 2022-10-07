@@ -1,31 +1,25 @@
 @media screen and (min-width: 600px) {
-  /* category */
-  .kids {
+  /* shopping cart page */
+  .cart-wrapper {
     display: flex;
+    justify-content: center;
   }
 
-  /* women page */
-  .container-kinds {
+  .cart-item {
+    width: 520px;
+    padding: 15px;
+  }
+
+  .quantity-price {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
-  .container-kinds div {
-    padding: 20px;
-    border: none;
-  }
-
-  .container-kinds .top {
-    padding: 20px;
-  }
-
-  .container-kinds .accessory {
-    padding: 20px;
-  }
-
-  .container-kinds .backpack {
-    padding: 20px;
+  .cart-summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   /* complete page */
