@@ -61,11 +61,11 @@ summaryContainer.innerHTML = `
                                                 Shipping, taxes, and discount codes are calculated at checkout.
                                             </p>
                                     </div>
-                                    <div class="checkout">
-                                        <a href="/html/cart&checkout/information.html">
+                                    <a href="/html/cart&checkout/information.html">
+                                        <div class="checkout">
                                             Checkout <i class="fa-solid fa-angle-right"></i>
-                                        </a>
-                                    </div>
+                                        </div>
+                                    </a> 
                                 </div>
 
                                 <div>
