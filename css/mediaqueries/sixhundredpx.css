@@ -19,7 +19,17 @@
   .cart-summary {
     display: flex;
     align-items: center;
+    /* align-items: flex-end; */
     justify-content: center;
+  }
+
+  /* Information page */
+  .left-and-right {
+    display: grid;
+    grid-template-columns: 1fr 12fr;
+  }
+  .flex-cart {
+    width: 300px;
   }
 
   /* complete page */

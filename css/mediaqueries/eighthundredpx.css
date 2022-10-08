@@ -88,6 +88,30 @@
     margin-right: 20px;
   }
 
+  /* information page */
+
+  /* .left-and-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .left {
+    width: 40%;
+  }
+
+  .right {
+    width: 60%;
+  } */
+
+  /* .flex-cart {
+    justify-content: flex-start;
+  }
+
+  .flex-item {
+    width: 20%;
+  } */
+
   /* complete page */
   .container-order-track-small p {
     font-size: 1.3em;

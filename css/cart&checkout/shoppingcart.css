@@ -3,102 +3,9 @@
   justify-content: center;
 }
 
-.whole-cart-window {
-  border-top: none;
-  margin: 15px;
-  top: 12vh;
-  padding-top: 0px;
-}
-
-.whole-cart-window h1 {
-  text-align: center;
-  font-weight: lighter;
-  margin: 30px auto;
-}
-
-/* BLOCK 1 */
-.cart-wrapper {
-  overflow-y: auto;
-  max-height: 350px;
-  width: 91vw;
-}
-
-.cart-item {
-  display: flex;
-  justify-content: space-between;
-  padding: 5% 2%;
-  border-bottom: solid 1px lightgray;
-}
-
-.cart-item img {
-  width: 130px;
-  height: 200px;
-  margin-right: 15px;
-}
-
-.cart-item h2 {
-  margin-top: 0px;
-  text-transform: uppercase;
-  font-size: 1.2em;
-  text-align: left;
-  margin-bottom: 5%;
-}
-
-.details {
-  padding-left: 0;
-  width: 55%;
-}
-
-.details p {
-  margin-bottom: 0px;
-}
-
-.price {
-  justify-self: end;
-  text-align: right;
-  margin-top: 35%;
-  margin-top: 0;
-}
-
 .cancel {
   margin-right: 5px;
   cursor: pointer;
-}
-
-.cart-summary {
-  display: flex;
-  flex-direction: column;
-  padding: 0px 20px 20px 20px;
-  background-color: #f8f8f8;
-  margin-top: 20px;
-}
-
-.container-summary-price {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 30px;
-  padding-right: 10px;
-  height: 200px;
-}
-
-.container-summary-price h2 {
-  text-transform: uppercase;
-  font-size: 1.3em;
-}
-
-.container-summary-price h3 {
-  text-transform: uppercase;
-  font-size: 1.1em;
-}
-
-.container-summary-price p {
-  font-weight: bolder;
-  font-size: 1.1em;
-}
-
-.subtotal {
-  text-align: right;
-  padding: 5%;
 }
 
 .calculated-at-check-out p {
@@ -121,35 +28,14 @@
   color: #fff;
 }
 
-/* .button-checkout {
-  display: flex;
-  justify-content: flex-end;
-} */
-
-/* BLOCK 2 */
-.container-button-hint {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 200px;
-  padding-right: 20px;
-}
-
 .continue-shopping {
   background-color: rgb(255, 255, 255);
   border: 2px solid var(--main-darkblue-color);
   color: var(--main-darkblue-color);
   border-radius: 5px;
-  padding: 10px;
+  padding: 10px 135px 10px 135px;
   text-align: center;
 }
-
-/* .button-continue-shopping a {
-  background-color: #f2f2f2;
-  color: #888888;
-  border: 2px solid #8e8e8e;
-  align-content: center;
-} */
 
 .hint-box {
   border: 1px solid #daeed3;
@@ -177,7 +63,9 @@
   font-weight: bolder;
 }
 
-/*up here */
+.disable-link {
+  pointer-events: none;
+}
 
 /* :root {
   --after-content: "2";

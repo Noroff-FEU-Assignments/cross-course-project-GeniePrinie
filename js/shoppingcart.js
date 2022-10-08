@@ -5,8 +5,9 @@ const summaryContainer = document.querySelector(".cart-summary");
 
 var totalPrice = 0;
 var cart = CartStorage.getCart();
+var cartEmpty = cart.size === 0;
 
-if (cart.size === 0) {
+if (cartEmpty) {
   cartContainer.innerHTML = `<div class"emptycart" style="font-size:25px;color:grey;display:flex;justify-content:center;width:100%">
                                 <p>Nothing is in the cart <i class="fa-regular fa-face-frown-open"></i>
                                 </p>
@@ -47,14 +48,14 @@ trashIcons.forEach((item) => {
   });
 });
 
-var freeShipping =
-  200 - totalPrice <= 0
-    ? "You got free shipping!"
-    : `You are $${200 - totalPrice} away from receiving free shipping!`;
+var freeShipping = 200 - totalPrice <= 0 ? true : false;
+var shippingMessage = freeShipping
+  ? "You got free shipping!"
+  : `You are $${200 - totalPrice} away from receiving free shipping!`;
 
 summaryContainer.innerHTML = `
                                 <div>
-                                    <div class="subtotal">Subtotal: ${totalPrice}</div>
+                                    <div class="subtotal">Subtotal: $${totalPrice}</div>
                                     <div class="calculated-at-check-out">
                                             <p>
                                                 Shipping, taxes, and discount codes are calculated at checkout.
@@ -77,6 +78,9 @@ summaryContainer.innerHTML = `
                                         <div class="hint-box">
                                             <i class="fa-solid fa-truck"></i>
                                             <p>Hint:</p>
-                                            <p>${freeShipping}</p>
+                                            <p>${shippingMessage}</p>
                                         </div>
                                 </div>`;
+
+const checkoutButton = document.querySelector(".checkout");
+if (cartEmpty) checkoutButton.classList.add("disable-link");
