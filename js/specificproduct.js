@@ -61,7 +61,7 @@ detailContainer.innerHTML += `
 
                                 <!-- add to cart button -->
                                 <div class="button button-design button-add-to-cart-position addToCartBtn">
-                                    Add to cart <i class="fa-solid fa-cart-shopping"></i>
+                                    <i class="fa-solid fa-cart-shopping"></i> Add to cart  
                                 </div>
                                 <!-- Description -->
                                 <div>

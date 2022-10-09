@@ -8,3 +8,7 @@
 .container-text {
   flex-direction: column;
 }
+
+.pay a {
+  padding: 10px 50px 10px 50px;
+}

@@ -23,9 +23,10 @@
       rel="stylesheet"
       href="/css/cart&checkout/button-return-continue.css"
     />
-    <link rel="stylesheet" href="/css/cart&checkout/information.css" />
+
     <link rel="stylesheet" href="/css/cart&checkout/summaryblock.css" />
     <link rel="stylesheet" href="/css/cart&checkout/radioblock.css" />
+
     <link rel="stylesheet" href="/css/cart&checkout/classcontainertext.css" />
     <link rel="stylesheet" href="/css/cart&checkout/payment.css" />
 
@@ -103,119 +104,122 @@
 
           <div class="container-circle-checked noncurrent">
             <div class="circle-checked noncurrent-circle">
-              <i class="fa-solid fa-check"></i>
+              <i class="fa-solid fa-4"></i>
             </div>
             <div><p>Complete</p></div>
           </div>
         </div>
       </section>
 
-      <section>
-        <div class="whole-cart-window"></div>
-        <div class="cart-summary"></div>
-
-        <!-- <div class="information-summary"> has .summary-line</div> -->
-
-        <div class="information-summary">
-          <div class="summary-line">
-            <p>Contact</p>
-            <p>example123@email.com</p>
-          </div>
-
-          <div class="summary-line">
-            <p>Ship to</p>
-            <p>Rainbow Dr 77, 0123, Oslo, Norway</p>
-          </div>
-
-          <div class="summary-line">
-            <p>Method</p>
-            <p>Standard Shipping (4-6 Working Days) • $5.90</p>
-          </div>
+      <section class="left-and-right">
+        <div class="left">
+          <div class="whole-cart-window"></div>
+          <div class="cart-summary sub-cart-summary"></div>
         </div>
 
-        <!-- <div class="creditcard-form"> has creditcard info, buttons</div> -->
-
-        <div class="creditcard-form">
-          <section>
-            <div class="container-text">
-              <h1>Payment</h1>
-              <p>All transactions are secure and encrypted.</p>
+        <!-- <div class="information-summary"> has .summary-line</div> -->
+        <div class="right">
+          <div class="information-summary">
+            <div class="summary-line">
+              <p>Contact</p>
+              <p>example123@email.com</p>
             </div>
 
-            <!-- credit card info -->
-            <div class="container-form-block">
-              <form action="">
-                <div>
-                  <input
-                    type="text"
-                    placeholder=""
-                    id="cardnumber"
-                    name="creditcardMumber"
-                    class="floatinput"
-                  />
-                  <label for="cardnumber" class="floatlabel"
-                    >Card Number*</label
-                  >
-                </div>
-
-                <div>
-                  <input
-                    type="text"
-                    placeholder=""
-                    id="nameoncard"
-                    name="nameOncard"
-                    class="floatinput"
-                  />
-                  <label for="nameoncard" class="floatlabel"
-                    >Name On Card*</label
-                  >
-                </div>
-
-                <div>
-                  <input
-                    type="text"
-                    placeholder=""
-                    id="expirationdate"
-                    name="expirationDate"
-                    class="floatinput"
-                  />
-                  <label for="expirationdate" class="floatlabel"
-                    >Expiration date (MM/YY)*</label
-                  >
-                </div>
-
-                <div>
-                  <input
-                    type="text"
-                    placeholder=""
-                    id="securitycode"
-                    name="securityCode"
-                    class="floatinput"
-                  />
-                  <label for="securitycode" class="floatlabel"
-                    >Security Code* <i class="fa-solid fa-circle-question"></i
-                  ></label>
-                </div>
-              </form>
-            </div>
-          </section>
-
-          <!-- button return and continue -->
-          <div class="container-button-return-continue">
-            <div>
-              <a href="/html/cart&checkout/information.html"
-                ><i class="fa-solid fa-angle-left"></i> Return to Information</a
-              >
+            <div class="summary-line">
+              <p>Ship to</p>
+              <p>Rainbow Dr 77, 0123, Oslo, Norway</p>
             </div>
 
-            <div class="button button-design button-return-continue">
-              <a href="/html/cart&checkout/complete.html"
-                >Pay now <i class="fa-solid fa-angle-right"></i
-              ></a>
+            <div class="summary-line">
+              <p>Method</p>
+              <p class="method"></p>
+            </div>
+          </div>
+
+          <!-- <div class="creditcard-form"> has creditcard info, buttons</div> -->
+
+          <div class="creditcard-form">
+            <section>
+              <div class="container-text">
+                <h1>Payment</h1>
+                <p>All transactions are secure and encrypted.</p>
+              </div>
+
+              <!-- credit card info -->
+              <div class="container-form-block">
+                <form action="">
+                  <div>
+                    <input
+                      type="text"
+                      placeholder=""
+                      id="cardnumber"
+                      name="creditcardMumber"
+                      class="floatinput"
+                    />
+                    <label for="cardnumber" class="floatlabel"
+                      >Card Number*</label
+                    >
+                  </div>
+
+                  <div>
+                    <input
+                      type="text"
+                      placeholder=""
+                      id="nameoncard"
+                      name="nameOncard"
+                      class="floatinput"
+                    />
+                    <label for="nameoncard" class="floatlabel"
+                      >Name On Card*</label
+                    >
+                  </div>
+
+                  <div>
+                    <input
+                      type="text"
+                      placeholder=""
+                      id="expirationdate"
+                      name="expirationDate"
+                      class="floatinput"
+                    />
+                    <label for="expirationdate" class="floatlabel"
+                      >Expiration date (MM/YY)*</label
+                    >
+                  </div>
+
+                  <div>
+                    <input
+                      type="text"
+                      placeholder=""
+                      id="securitycode"
+                      name="securityCode"
+                      class="floatinput"
+                    />
+                    <label for="securitycode" class="floatlabel"
+                      >Security Code* <i class="fa-solid fa-circle-question"></i
+                    ></label>
+                  </div>
+                </form>
+              </div>
+            </section>
+
+            <!-- button return and continue -->
+            <div class="container-button-return-continue">
+              <div>
+                <a href="/html/cart&checkout/information.html"
+                  ><i class="fa-solid fa-angle-left"></i> Return to
+                  Information</a
+                >
+              </div>
+
+              <div class="button button-design button-return-continue pay">
+                <a href="/html/cart&checkout/thankyou.html">Pay</a>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <script type="module" src="/js/payment.js"></script>
   </body>
 </html>

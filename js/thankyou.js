@@ -25,6 +25,7 @@ cart.forEach(function (item, key) {
 });
 
 const summaryContainer = document.querySelector(".cart-summary");
+const methodContainer = document.querySelector(".method");
 var shippingCost = 200 - totalPrice <= 0 ? 0 : 20;
 summaryContainer.innerHTML = `
                                 <div>
@@ -33,3 +34,9 @@ summaryContainer.innerHTML = `
                                 </div>
 
                              `;
+
+if (shippingCost === 0) {
+  methodContainer.innerHTML = `<p>Free Shipping</p>`;
+} else {
+  methodContainer.innerHTML = `<p>Standard Shipping (4-6 Working Days) • $${shippingCost}</p>`;
+}

@@ -40,14 +40,12 @@
   }
 
   /* information page */
-
   .sub-cart-summary {
     display: block;
     text-align: right;
   }
 
   /* checkout success pages */
-
   .container-block-flex-row {
     display: flex;
     flex-direction: row-reverse;
@@ -63,11 +61,6 @@
 
   .container-block-form {
     width: 430px;
-  }
-
-  .container-form-inputs {
-    display: flex;
-    flex-direction: column;
   }
 
   /* summary block */

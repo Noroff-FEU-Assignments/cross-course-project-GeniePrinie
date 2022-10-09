@@ -30,7 +30,6 @@
     padding-right: 40px;
     margin: 0px;
     display: contents;
-    /* border: 1px solid green; */
   }
 
   .sub-cart-summary {
@@ -38,14 +37,6 @@
     text-align: right;
   }
 
-  /* information page */
-
-  .container-form-inputs {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-right: 0px;
-  }
   /* complete page */
   .container-order-track-small p {
     font-size: 1em;
