@@ -11,7 +11,7 @@ cart.forEach(function (item, key) {
   itemContainer.innerHTML += `
       <div class="cart-wrapper sub-cart-wrapper">
           <div class="cart-item sub-cart-item">
-              <img src="/images/women/${item.image}" />
+              <img src="/images/women/${item.image}"  alt="a woman wearing Rainydays ${item.name} in ${item.color} color" />
 
               <div class="details">
                  <h2>${item.name}</h2>
@@ -26,11 +26,14 @@ cart.forEach(function (item, key) {
 
 const summaryContainer = document.querySelector(".cart-summary");
 const methodContainer = document.querySelector(".method");
+const homeButton = document.querySelector(".home");
 var shippingCost = 200 - totalPrice <= 0 ? 0 : 20;
 summaryContainer.innerHTML = `
                                 <div>
                                     <div class="shipping">Shipping: $${shippingCost}</div>
-                                    <div class="subtotal">Subtotal: $${totalPrice}</div>
+                                    <div class="subtotal">Subtotal: $${
+                                      totalPrice + shippingCost
+                                    }</div>
                                 </div>
 
                              `;
@@ -40,3 +43,5 @@ if (shippingCost === 0) {
 } else {
   methodContainer.innerHTML = `<p>Standard Shipping (4-6 Working Days) • $${shippingCost}</p>`;
 }
+
+homeButton.addEventListener("click", CartStorage.clearCart());

@@ -19,7 +19,9 @@ if (cartEmpty) {
     cartContainer.innerHTML += `
                                <div class="cart-wrapper">
                                    <div class="cart-item">
-                                       <img src="/images/women/${item.image}" />
+                                       <img src="/images/women/${item.image}"  
+                                       alt="a woman wearing Rainydays ${item.name} in ${item.color} color"/>
+                                       
 
                                        <div class="details">
                                           <h2>${item.name}</h2>
@@ -61,7 +63,7 @@ summaryContainer.innerHTML = `
                                                 Shipping, taxes, and discount codes are calculated at checkout.
                                             </p>
                                     </div>
-                                    <a href="/html/cart&checkout/information.html">
+                                    <a class="checkout-button" href="/html/cart&checkout/information.html">
                                         <div class="checkout">
                                             Checkout <i class="fa-solid fa-angle-right"></i>
                                         </div>
@@ -82,5 +84,5 @@ summaryContainer.innerHTML = `
                                         </div>
                                 </div>`;
 
-const checkoutButton = document.querySelector(".checkout");
+const checkoutButton = document.querySelector(".checkout-button");
 if (cartEmpty) checkoutButton.classList.add("disable-link");
