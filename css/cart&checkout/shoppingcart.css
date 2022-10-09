@@ -17,7 +17,6 @@
 }
 
 .cart-wrapper {
-  /* overflow-y: auto; */
   max-height: 350px;
   width: 91vw;
 }
@@ -64,7 +63,6 @@
   cursor: pointer;
 }
 
-/* BLOCK 2 */
 .cart-summary {
   display: flex;
   flex-direction: column;
@@ -133,20 +131,3 @@
 .disable-link {
   pointer-events: none;
 }
-
-/* :root {
-  --after-content: "2";
-} */
-
-/* .non-empty::after {
-  content: var(--after-content);
-  font-size: 25px;
-  width: 25px;
-  display: inline-block;
-  text-align: center;
-  position: relative;
-  top: -20px;
-  right: 20%;
-  background-color: red;
-  border-radius: 50%;
-} */
