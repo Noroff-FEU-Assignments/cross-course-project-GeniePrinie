@@ -38,6 +38,14 @@
     justify-content: space-evenly;
     margin: 10px;
   }
+
+  /* information page */
+
+  .sub-cart-summary {
+    display: block;
+    text-align: right;
+  }
+
   /* checkout success pages */
 
   .container-block-flex-row {

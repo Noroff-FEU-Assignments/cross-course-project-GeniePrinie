@@ -8,34 +8,31 @@ var cart = CartStorage.getCart();
 cart.forEach(function (item, key) {
   var price = parseFloat(item.price) * item.quantity;
   totalPrice += price;
-  //   itemContainer.innerHTML += `
-  //     <div class="cart-wrapper flex-cart">
-  //         <div class="cart-item flex-item">
-  //             <img src="/images/women/${item.image}" />
+  itemContainer.innerHTML += `
+      <div class="cart-wrapper sub-cart-wrapper">
+          <div class="cart-item sub-cart-item">
+              <img src="/images/women/${item.image}" />
 
-  //             <div class="details">
-  //                <h2>${item.name}</h2>
-  //                <p>Color: ${item.color}</p>
+              <div class="details">
+                 <h2>${item.name}</h2>
+                 <p>Color: ${item.color}</p>
+                 <p class="quantity">Quantity: ${item.quantity}</p>
+                 <p class="price">Price: $${price}</p>
+              </div>
 
-  //                <div class="quantity-price" >
-  //                    <p class="quantity">Quantity: ${item.quantity}</p>
-  //                    <p><span class="price">Price: $${price}</p>
-  //                </div>
-
-  //             </div>
-
-  //         </div>
-  //     </div>`;
+          </div>
+      </div>`;
 });
 
-// const summaryContainer = document.querySelector(".cart-summary");
-// summaryContainer.innerHTML = `
-//                                 <div>
-//                                     <div class="shipping">Shipping: $${totalPrice}</div>
-//                                     <div class="subtotal">Subtotal: $${totalPrice}</div>
-//                                 </div>
+const summaryContainer = document.querySelector(".cart-summary");
+var shippingCost = 200 - totalPrice <= 0 ? 0 : 20;
+summaryContainer.innerHTML = `
+                                <div>
+                                    <div class="shipping">Shipping: $${shippingCost}</div>
+                                    <div class="subtotal">Subtotal: $${totalPrice}</div>
+                                </div>
 
-//                              `;
+                             `;
 
 // const infoFormContainer = document.querySelector(".information-form");
 // infoFormContainer.innerHTML = `<!-- Quick checkout -->

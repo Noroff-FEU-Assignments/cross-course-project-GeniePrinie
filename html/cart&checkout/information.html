@@ -28,9 +28,9 @@
     />
 
     <!-- <link rel="stylesheet" href="/css/cart&checkout/summaryblock.css" /> -->
+    <link rel="stylesheet" href="/css/cart&checkout/radioblock.css" />
 
     <link rel="stylesheet" href="/css/cart&checkout/information.css" />
-    <link rel="stylesheet" href="/css/cart&checkout/radioblock.css" />
 
     <link rel="stylesheet" href="/css/cart&checkout/classcontainertext.css" />
     <link rel="stylesheet" href="/css/mediaqueries/sixhundredpx.css" />
@@ -108,32 +108,8 @@
 
       <section class="left-and-right">
         <div class="left">
-          <div class="whole-cart-window">
-
-            <div class="cart-wrapper flex-cart">
-              <div class="cart-item flex-item">
-                  <img src="/images/women/item2.jpg" />
-      
-                  <div class="details">
-                     <h2>${item.name}</h2>
-                     <p>Color: ${item.color}</p>
-      
-                     <div class="quantity-price" >   
-                         <p class="quantity">Quantity: ${item.quantity}</p> 
-                         <p><span class="price">Price: $${price}</p>
-                     </div>
-      
-                  </div>
-      
-              
-              </div>
-            </div>
-
-          </div>
-          <div class="cart-summary"><div>
-            <div class="shipping">Shipping: $${totalPrice}</div>
-            <div class="subtotal">Subtotal: $${totalPrice}</div>
-        </div></div>
+          <div class="whole-cart-window"></div>
+          <div class="cart-summary sub-cart-summary"></div>
         </div>
         <!-- <div class="information-form"></div> -->
 
@@ -334,45 +310,6 @@
                     >Save this information for next time.</label
                   >
                 </div>
-
-                <!-- HERE -->
-                <!-- Shipping Method -->
-                <section>
-                  <!-- shipping method h1 -->
-                  <div class="container-text">
-                    <h1>Shipping Method</h1>
-                  </div>
-                  <!-- radio block -->
-                  <div class="container-radio-block">
-                    <div class="container-radio">
-                      <div>
-                        <input
-                          type="radio"
-                          id="standard"
-                          name="shippingOption"
-                        />
-                        <label for="standard"
-                          >Standard Shipping (4-6 Working Days)</label
-                        >
-                      </div>
-                      <div><p>$5.90</p></div>
-                    </div>
-
-                    <div class="container-radio">
-                      <div>
-                        <input
-                          type="radio"
-                          id="express"
-                          name="shippingOption"
-                        />
-                        <label for="express"
-                          >Express Shipping (2-3 Working Days)</label
-                        >
-                      </div>
-                      <div><p>$9.90</p></div>
-                    </div>
-                  </div>
-                </section>
               </form>
             </div>
           </div>
@@ -387,7 +324,7 @@
 
             <div class="button button-design continue-buttons">
               <a href="/html/cart&checkout/payment.html"
-                >Continue to Payment <i class="fa-solid fa-angle-right"></i
+                >Go to Payment <i class="fa-solid fa-angle-right"></i
               ></a>
             </div>
           </div>
