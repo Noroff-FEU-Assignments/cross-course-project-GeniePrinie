@@ -53,3 +53,21 @@ div {
   text-decoration: underline;
   color: rgb(120, 120, 120) !important;
 }
+
+.loading {
+  border: 10px solid rgb(242, 242, 242);
+  border-top: 10px solid var(--main-darkblue-color);
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

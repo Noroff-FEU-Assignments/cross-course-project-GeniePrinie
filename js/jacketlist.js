@@ -1,29 +1,43 @@
-import myJson from "../json/products.json" assert { type: "json" };
-
-//jacketlist.js
 const resultsContainer = document.querySelector(".results");
 resultsContainer.innerHTML = "";
 
-//link products.json objects here
-try {
-  const items = myJson.cartItems;
-  for (let i = 0; i < items.length; i++) {
-    const item = items[i];
-    resultsContainer.innerHTML += `  <a href="/html/women/specificproduct.html?id=${item.id}">
-                                            <div data-id="${item.id}" class="card-item">
-                                                <img
-                                                    src="/images/women/${item.image}"
-                                                    alt="a woman wearing Rainydays ${item.name} in ${item.color} color"
-                                                />
-                                                <h2>${item.name}</h2>
-                                                <p>Color: ${item.color}</p>
-                                                <p>$${item.price}</p>
-                                            </div>
-                                        </a>`;
+const loading = document.querySelector(".preLoading");
+loading.innerHTML = `<div class="loading"></div>`;
+
+const url = "http://rainydays.local/wp-json/wc/store/products";
+
+async function fetchjacket() {
+  try {
+    const response = await fetch(url);
+    const items = await response.json();
+    for (let i = 0; i < items.length; i++) {
+      loading.innerHTML = `<div class=""></div>`;
+
+      const item = items[i];
+      const id = item.id;
+      const name = item.name;
+      const color = item.attributes[0].terms[0].name;
+      const imageSrc = item.images[0].src;
+      const price = `${item.prices.regular_price} ${item.prices.currency_symbol}`;
+
+      resultsContainer.innerHTML += `  <a href="/html/women/specificproduct.html?id=${id}">
+                                                  <div data-id="${id}" class="card-item">
+                                                      <img
+                                                          src="${imageSrc}"
+                                                          alt="a woman wearing Rainydays ${name} in ${color} color"
+                                                      />
+                                                      <h2>${name}</h2>
+                                                      <p>Color: ${color}</p>
+                                                      <p>${price}</p>
+                                                  </div>
+                                              </a>`;
+    }
+  } catch (error) {
+    resultsContainer.innerHTML = logError("error", error);
   }
-} catch (error) {
-  resultsContainer.innerHTML = logError("error", error);
 }
+
+fetchjacket();
 
 function logError(messageType = "success", message = "") {
   return `<div class="alert ${messageType}">${message}</div>`;

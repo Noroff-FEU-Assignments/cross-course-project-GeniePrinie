@@ -19,7 +19,7 @@ if (cartEmpty) {
     cartContainer.innerHTML += `
                                <div class="cart-wrapper">
                                    <div class="cart-item">
-                                       <img src="/images/women/${item.image}"  
+                                       <img src="${item.image}"  
                                        alt="a woman wearing Rainydays ${item.name} in ${item.color} color"/>
                                        
 
