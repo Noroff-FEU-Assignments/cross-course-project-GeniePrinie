@@ -11,7 +11,7 @@ cart.forEach(function (item, key) {
   itemContainer.innerHTML += `
       <div class="cart-wrapper sub-cart-wrapper">
           <div class="cart-item sub-cart-item">
-              <img src="/images/women/${item.image}"  
+              <img src="${item.image}"  
               alt="a woman wearing Rainydays ${item.name} in ${item.color} color" />
               
 
@@ -19,7 +19,7 @@ cart.forEach(function (item, key) {
                  <h2>${item.name}</h2>
                  <p>Color: ${item.color}</p>
                  <p class="quantity">Quantity: ${item.quantity}</p>
-                 <p class="price">Price: $${price}</p>
+                 <p class="price">Price: ${price}</p>
               </div>
 
           </div>
@@ -30,8 +30,8 @@ const summaryContainer = document.querySelector(".cart-summary");
 var shippingCost = 200 - totalPrice <= 0 ? 0 : 20;
 summaryContainer.innerHTML = `
                                 <div>
-                                    <div class="shipping">Shipping: $${shippingCost}</div>
-                                    <div class="subtotal">Subtotal: $${
+                                    <div class="shipping">Shipping: ${shippingCost}</div>
+                                    <div class="subtotal">Subtotal: ${
                                       totalPrice + shippingCost
                                     }</div>
                                 </div>

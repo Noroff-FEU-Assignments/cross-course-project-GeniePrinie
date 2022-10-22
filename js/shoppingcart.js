@@ -29,7 +29,7 @@ if (cartEmpty) {
 
                                           <div class="quantity-price" >   
                                               <p class="quantity">Quantity: ${item.quantity}</p> 
-                                              <p><span class="price">Price: $${price}</p>
+                                              <p><span class="price">Price: ${price}</p>
                                           </div>
 
                                        </div>
@@ -57,7 +57,7 @@ var shippingMessage = freeShipping
 
 summaryContainer.innerHTML = `
                                 <div>
-                                    <div class="subtotal">Subtotal: $${totalPrice}</div>
+                                    <div class="subtotal">Subtotal: ${totalPrice}</div>
                                     <div class="calculated-at-check-out">
                                             <p>
                                                 Shipping, taxes, and discount codes are calculated at checkout.
