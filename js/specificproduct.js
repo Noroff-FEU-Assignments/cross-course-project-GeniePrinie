@@ -93,6 +93,6 @@ detailContainer.innerHTML += `
 const addToCartBtn = document.querySelector(".addToCartBtn");
 
 addToCartBtn.addEventListener("click", function () {
-  const cartItem = new CartItem(name, color, imageSrc, price);
+  const cartItem = new CartItem(name, color, imageSrc, price, currency);
   CartStorage.setCart(id, cartItem);
 });

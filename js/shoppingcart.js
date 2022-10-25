@@ -29,7 +29,7 @@ if (cartEmpty) {
 
                                           <div class="quantity-price" >   
                                               <p class="quantity">Quantity: ${item.quantity}</p> 
-                                              <p><span class="price">Price: ${price}</p>
+                                              <p><span class="price">Price: ${price} ${item.currency}</p>
                                           </div>
 
                                        </div>
@@ -50,14 +50,14 @@ trashIcons.forEach((item) => {
   });
 });
 
-var freeShipping = 200 - totalPrice <= 0 ? true : false;
+var freeShipping = 2000 - totalPrice <= 0 ? true : false;
 var shippingMessage = freeShipping
   ? "You got free shipping!"
-  : `You are $${200 - totalPrice} away from receiving free shipping!`;
+  : `You are ${2000 - totalPrice} kr away from receiving free shipping!`;
 
 summaryContainer.innerHTML = `
                                 <div>
-                                    <div class="subtotal">Subtotal: ${totalPrice}</div>
+                                    <div class="subtotal">Subtotal: ${totalPrice} kr</div>
                                     <div class="calculated-at-check-out">
                                             <p>
                                                 Shipping, taxes, and discount codes are calculated at checkout.
