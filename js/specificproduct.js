@@ -3,7 +3,9 @@ import { CartItem, CartStorage } from "/js/cartclasses.js";
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
-const url = "http://rainydays-api.local/wp-json/wc/store/products/" + id;
+const url =
+  "https://genieprinyanut.com/Noroff/rainydays-api/wp-json/wc/store/products/" +
+  id;
 const detailContainer = document.querySelector(".product");
 const pageTitle = document.querySelector("title");
 const currentBreadcrumb = document.querySelector(".current-breadcrumb");

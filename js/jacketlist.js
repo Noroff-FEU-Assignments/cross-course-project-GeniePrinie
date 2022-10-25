@@ -4,7 +4,8 @@ resultsContainer.innerHTML = "";
 const loading = document.querySelector(".preLoading");
 loading.innerHTML = `<div class="loading"></div>`;
 
-const url = "http://rainydays-api.local/wp-json/wc/store/products";
+const url =
+  "https://genieprinyanut.com/Noroff/rainydays-api/wp-json/wc/store/products";
 
 async function fetchjacket() {
   try {
