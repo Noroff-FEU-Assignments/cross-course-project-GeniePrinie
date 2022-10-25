@@ -4,7 +4,7 @@ resultsContainer.innerHTML = "";
 const loading = document.querySelector(".preLoading");
 loading.innerHTML = `<div class="loading"></div>`;
 
-const url = "http://rainydays.local/wp-json/wc/store/products";
+const url = "http://rainydays-api.local/wp-json/wc/store/products";
 
 async function fetchjacket() {
   try {
