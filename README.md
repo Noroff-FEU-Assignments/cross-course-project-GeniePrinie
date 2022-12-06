@@ -32,3 +32,8 @@ This project was to create an online jacket store. It is also to make a function
 - Functional contact form
 - Hamburger menu for the phone-view
 - Basic HTML, CSS, JavaScript
+
+## Contact
+[My Linkedin page](https://www.linkedin.com/in/genie-prinyanut-ab3441257/)
+
+[My Website](https://genieprinyanut.netlify.app/)
