@@ -7,7 +7,7 @@ This is a Home page of Rainydays, an online clothing store website.
 
 ## Description
 
-This project was to create an online jacket store. It is also to make a functional shopping cart, create my own REST API by using the WordPress Woocommerce plug-in, and make a validation form for the contact form.
+This project was to create an online jacket store. It was also to make a functional shopping cart, create my own REST API by using the WordPress Woocommerce plug-in, and make a validation form for the contact form.
 
 ### The pages are:
 
