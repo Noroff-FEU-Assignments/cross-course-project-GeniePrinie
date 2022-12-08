@@ -7,7 +7,7 @@ This is a Home page of Rainydays, an online clothing store website.
 
 ## Description
 
-This project was to create an online jacket store. It was also to make a functional shopping cart, create my own REST API by using the WordPress Woocommerce plug-in, and make a validation form for the contact form. The site was built using HTML, CSS and JavaScript and making a call to the WordPress REST API to fetch the data. 
+This project was to create an online jacket store. It was also to make a functional shopping cart, create my own REST API by using the WordPress Woocommerce plug-in, and make a validation form for the contact form. The site was built using HTML, CSS and JavaScript making a call to the WordPress REST API to fetch the data. 
 
 ### The pages are:
 
@@ -33,7 +33,19 @@ This project was to create an online jacket store. It was also to make a functio
 - Hamburger menu for the phone-view
 - Basic HTML, CSS, JavaScript
 
+## WordPress
+
+The WordPress was installed on my web host a add the blogs on the admin panel. The content for the website are stored on a WordPress installation used as a Headless CMS. WordPress is only used to provide an API and add content for the blog. 
+
+The JavaScript code makes a call to the WordPress REST API to fetch the data (recipes).
+
+## Hotjar
+
+Hotjar was installed on the website. I asked users to test my website, and adjust based on their feedback and any insights from Hotjar.
+
+
 ## Contact
+
 [My Linkedin page](https://www.linkedin.com/in/genie-prinyanut-ab3441257/)
 
 [My Website](https://genieprinyanut.netlify.app/)
