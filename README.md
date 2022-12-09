@@ -13,8 +13,8 @@ This project was to create an online jacket store. It was also to make a functio
 
 1. Home Page
 2. Women Page
-3. Jackets Page (where all the products are)
-4. Specific Jacket Page (an individual jacket page when clicked a product from the Jackets Page)
+3. Jackets Page (All the products are rendered from WordPress REST API)
+4. Specific Jacket Page (an individual jacket page was built by using a query string parameter based on whatever link the user clicked. The title of the Specific Jacket Page will change based on the "jacket" (product) that has been clicked on e.g. “Rainydays | Product name”)
 5. Shopping Cart Page (where you can see all your products and prices that you are going to purchase. You can add/remove any products from the cart)
 6. Checkout pages:
 
