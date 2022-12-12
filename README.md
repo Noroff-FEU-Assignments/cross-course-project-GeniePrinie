@@ -3,7 +3,7 @@ cross-course-project-GeniePrinie created by GitHub Classroom
 
 ![img1](https://user-images.githubusercontent.com/100139381/205891587-67344bb1-587e-47a1-9772-176e6b9b3ef2.jpg)
 
-This is a Home page of Rainydays, an online clothing store website.
+This is the Home page of Rainydays, an online clothing store website.
 
 ## Description
 
@@ -35,7 +35,7 @@ This project was to create an online jacket store. It was also to make a functio
 
 ## WordPress
 
-The WordPress was installed on my web host a add the blogs on the admin panel. The content for the website are stored on a WordPress installation used as a Headless CMS. WordPress is only used to provide an API and add content for the blog. 
+The WordPress was installed on my web host and then I added the blogs on the admin panel. The content for the website is stored on a WordPress installation used as a Headless CMS. WordPress is only used to provide an API and to add content for the blog. 
 
 The JavaScript code makes a call to the WordPress REST API to fetch the data (recipes).
 
